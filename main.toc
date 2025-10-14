@@ -1,0 +1,26 @@
+\contentsline {chapter}{Abstract}{i}{Doc-Start}%
+\contentsline {chapter}{Acknowledgements}{ii}{Doc-Start}%
+\contentsline {chapter}{List of Figures}{v}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{vi}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Related Work}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Design Overview}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Testing}{2}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Problems Encountered}{2}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Limitations}{2}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Materials and Methods}{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dataset}{3}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Image Processing}{3}{section.3.2}%
+\contentsline {section}{\numberline {3.3}CNN Models}{3}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Vision Language Models}{3}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Evaluation}{4}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Hardware}{4}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Experimental Setup}{4}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Results}{4}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Challenges}{5}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{6}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Summary}{6}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Future Work}{6}{section.6.2}%
+\contentsline {chapter}{Appendix A - Something}{A-1}{section*.4}%
+\contentsline {chapter}{Appendix B - Another Thing}{B-1}{section*.5}%
