@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.14)  14 OCT 2025 21:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.15)  15 OCT 2025 17:48
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/wongs/3D Objects/Modules/DSA3288/report/main"
-(c:/Users/wongs/3D Objects/Modules/DSA3288/report/main.tex
+**c:/Users/wongs/OneDrive/Documents/GitHub/report/main.tex
+(c:/Users/wongs/OneDrive/Documents/GitHub/report/main.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
 (c:/texlive/2025/texmf-dist/tex/latex/base/report.cls
@@ -614,7 +614,7 @@ Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 \pgfopts@list@add@b@toks=\toks31
 ) (c:/texlive/2025/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 )
 \c@minted@FancyVerbLineTemp=\count484
 \@float@every@listing=\toks32
@@ -975,17 +975,7 @@ Package translations Info: No language package found. I am going to use `english
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 4.
  (c:/texlive/2025/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-) (./main.aux
-
-LaTeX Warning: Label `imp:sec:Testing' multiply defined.
-
-
-LaTeX Warning: Label `imp:sec:Problems Encountered' multiply defined.
-
-
-LaTeX Warning: Label `imp:sec:Limitations' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -1093,12 +1083,11 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-
-No file main.bbl.
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 4.
 Package biblatex Info: Reference segment=0 on input line 4.
-(c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+ (c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 4.
@@ -1226,9 +1215,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] (./chapters/intro.tex
 Chapter 1.
-
-LaTeX Warning: Citation 'lamport_time_1978' on page 1 undefined on input line 4.
-
 ) (./chapters/related.tex
 
 
@@ -1256,36 +1242,44 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10.95> not available
 
 ]
 Chapter 3.
-) (./chapters/evaluation.tex
+
 
 [3
 
 ]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 47.
+ (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+
+[4]) (./chapters/evaluation.tex
+
+[5]
 Chapter 4.
 ) (./chapters/challenges.tex
 
-[4
+[6
 
 ]
 Chapter 5.
 ) (./chapters/conclusion.tex
 
-[5
+[7
 
 ]
 Chapter 6.
 )
 
-[6
+[8
+
+] (./chapters/appendix-a.tex
+
+[9
+
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 33.
-
-(./chapters/appendix-a.tex
-
 [1
-
 
 
 
@@ -1296,50 +1290,32 @@ LaTeX Warning: Empty bibliography on input line 33.
 
 
 ])
-runsystem(latexminted cleantemp  --timestamp 20251014215501 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted cleantemp  --timestamp 20251015174804 FAD58DE7366495DB4650CFEFAC2FCD61)...executed.
 
  (./main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: FD58C816D65BFB54C4A87945BD32BB69;3025
-(rerunfilecheck)             After:  40CA23ABB5C520BA7020A4945EC75A1D;3084.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: CF7C5B44F76955C8CBBC82F1DB65E17D;3174.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40278 strings out of 467747
- 842892 string characters out of 5431116
- 1847890 words of memory out of 5000000
- 68336 multiletter control sequences out of 15000+600000
- 660313 words of font info for 75 fonts, out of 8000000 for 9000
+ 40372 strings out of 467748
+ 844883 string characters out of 5431137
+ 1848133 words of memory out of 5000000
+ 68413 multiletter control sequences out of 15000+600000
+ 666278 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,9n,90p,740b,5052s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (16 pages, 75409 bytes).
+ 86i,9n,90p,741b,5052s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (19 pages, 89823 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 254 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 315 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 
