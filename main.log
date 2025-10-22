@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.15)  16 OCT 2025 09:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.14)  22 OCT 2025 16:47
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/wongs/OneDrive/Documents/GitHub/report/main.tex
-(c:/Users/wongs/OneDrive/Documents/GitHub/report/main.tex
+**"c:/Users/wongs/3D Objects/Modules/DSA3288/report/main"
+(c:/Users/wongs/3D Objects/Modules/DSA3288/report/main.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
 (c:/texlive/2025/texmf-dist/tex/latex/base/report.cls
@@ -614,7 +614,7 @@ Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 \pgfopts@list@add@b@toks=\toks31
 ) (c:/texlive/2025/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 \c@minted@FancyVerbLineTemp=\count484
 \@float@every@listing=\toks32
@@ -1247,34 +1247,38 @@ Chapter 3.
 [3
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 48.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 71.
  (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
-[4]) (./chapters/evaluation.tex
+[4]
 
 [5]
+
+[6]) (./chapters/evaluation.tex
+
+[7]
 Chapter 4.
 ) (./chapters/challenges.tex
 
-[6
+[8
 
 ]
 Chapter 5.
 ) (./chapters/conclusion.tex
 
-[7
+[9
 
 ]
 Chapter 6.
 )
 
-[8
+[10
 
 ] (./chapters/appendix-a.tex
 
-[9
+[11
 
 
 ]
@@ -1290,7 +1294,7 @@ Chapter 6.
 
 
 ])
-runsystem(latexminted cleantemp  --timestamp 20251016093538 FAD58DE7366495DB4650CFEFAC2FCD61)...executed.
+runsystem(latexminted cleantemp  --timestamp 20251022164702 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
 
  (./main.aux)
  ***********
@@ -1304,18 +1308,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40372 strings out of 467748
- 844883 string characters out of 5431137
- 1848133 words of memory out of 5000000
- 68413 multiletter control sequences out of 15000+600000
+ 40378 strings out of 467747
+ 844976 string characters out of 5431116
+ 1848227 words of memory out of 5000000
+ 68416 multiletter control sequences out of 15000+600000
  666278 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,9n,90p,741b,5052s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,9n,90p,740b,5052s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (19 pages, 89883 bytes).
+Output written on main.pdf (21 pages, 93618 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 279 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
+ 325 PDF objects out of 1000 (max. 8388607)
+ 287 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
  229 words of extra memory for PDF output out of 10000 (max. 10000000)
 
