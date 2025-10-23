@@ -1,0 +1,7 @@
+https://arxiv.org/abs/2106.09685 (lora)
+
+https://arxiv.org/pdf/2507.05201 (medgemma)
+
+https://arxiv.org/pdf/2403.08002 (llava-rad)
+
+https://arxiv.org/pdf/1807.06521 (cbam)

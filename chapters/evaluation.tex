@@ -1,27 +1,37 @@
 \chapter{Evaluation}
 \label{chap:Evaluation}
 
-\section{Hardware}
-\label{sec:Hardware}
-
-\section{Experimental Setup}
-\label{sec:Experimental Setup}
-
 \section{Results}
 \label{sec:Results}
 
-\begin{table}[htbp]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
-ID & Name & Score \\
-\hline
-1 & Alice & 88 \\
-2 & Bob & 92 \\
-3 & Carol & 85 \\
-\hline
-\end{tabular}
-\caption{Example of a simple table.}
-\label{eval:table:example}
-\end{table}
+\subsection{Evaluation Metrics}
+\label{imp:sec:Evaluation Metrics}
+
+\begin{flushleft}
+The models were evaluated using accuracy, precision, recall, F1 score and AUROC (for the CNN models only).
+The metrics are calculated based on the true positive (TP), true negative (TN), false positive (FP) and
+false negative (FN) values. The equations for the first 4 metrics are as follows:
+
+\begin{equation}
+Accuracy=\frac{TP+TN}{TP+TN+FP+FN}
+\end{equation}
+
+\begin{equation}
+Precision=\frac{TP}{TP+FP}
+\end{equation}
+
+\begin{equation}
+Recall=\frac{TP}{TP+FN}
+\end{equation}
+
+\begin{equation}
+F\textit{1}\,score=\frac{2*TP}{2*TP+FP+FN}
+\end{equation}
+
+\end{flushleft}
+
+\section{Discussion}
+\label{sec:Discussion}
+
+
 

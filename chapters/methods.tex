@@ -8,10 +8,9 @@
 The main dataset used in this project was collected from XXX hospital and consists of 4369 elbow 
 radiographs in either the lateral or anterior posterior view. Each radiograph was named according 
 to the type of injury present (supracondylar fracture, dislocation, contusion etc). Using this
-information, the data was labelled as either injury and normal. The injury set includes radiographs 
-with fractures and/or dislocations while the normal set consists of all other radiographs. The data 
-was further divided into training, validation, and test sets as shown in figure 3.1.
-(figure)
+information, the data was grouped into either injury or normal. The injury set includes radiographs 
+with untreated fractures and/or dislocations while the normal set consists of all other radiographs. 
+The data was further divided into training, validation, and test sets as shown in Table 3.1.
 
 In addition, the MURA dataset from Stanford Machine Learning Group was used for pretraining the CNN 
 models. This dataset consists of 40561 radiographs of 7 different bodyparts: elbow, finger, forearm, 
@@ -19,36 +18,79 @@ hand, humerus, shoulder and wrist. Each image is labelled as either positive (ab
 (no abnormality). Notably, the criteria for abnormality used in MURA differs from the criteria for injury 
 in the main dataset. For instance, a contusion would be classified as normal in the main dataset but
 would be classified as abnormal in the MURA dataset. The division of the data into training and 
-validation sets is shown in figure 3.2.
-(figure)
+validation sets is shown in Table 3.2.
+
+\begin{table}[h!]
+\parbox{.45\linewidth}{ % [h!] suggests placing the table "here" if possible
+    \centering % Centers the table on the page
+    \begin{tabular}{|c|c|c|} % Defines column types and vertical lines
+        \hline % Horizontal line at the top
+        Set & Normal & Injury \\ % Table headers
+        \hline % Horizontal line below headers
+        Training & 1957 & 1538 \\
+        \hline % Horizontal line between rows
+        Validation & 244 & 193 \\
+        \hline % Horizontal line between rows
+        Test & 186 & 251 \\
+        \hline % Horizontal line between rows
+        Total & 2387 & 1982 \\
+        \hline % Horizontal line at the bottom
+    \end{tabular}
+    \caption{Training Set} % Table caption
+    \label{tab:Training Set} % Label for referencing the table
+}
+\parbox{.45\linewidth}{
+    \centering % Centers the table on the page
+    \begin{tabular}{|c|c|c|} % Defines column types and vertical lines
+        \hline % Horizontal line at the top
+        Set & Normal & Injury \\ % Table headers
+        \hline % Horizontal line below headers
+        Training & 21935 & 14870 \\
+        \hline % Horizontal line between rows
+        Validation & 1533 & 1667 \\
+        \hline % Horizontal line between rows
+        Total & 23468 & 16537 \\
+        \hline % Horizontal line at the bottom
+    \end{tabular}
+    \caption{Pretraining Set} % Table caption
+    \label{tab:Pretraining Set} % Label for referencing the table
+}
+\end{table}
+
 \end{flushleft}
 
 \section{Data Processing}
 \label{imp:sec:Data Processing}
 
 \begin{flushleft}
-To improve the quality of the radiographs, all of the radiographs underwent preprocessing. First, the radiographs 
-underwent Contrast Limited Adaptive Histogram Equalisation (CLAHE) using OpenCV. Adaptive Histogram Equalisation
-is an image processing technique which calculates histograms of the pixel intensities in different parts of an 
+To improve the quality of the radiographs, all of the radiographs underwent preprocessing. Firstly, the images were 
+resized according to the model used. For the CNN models, the image size used for pretraining and training was 384 x 384 
+and 584 x 584 pixels respectively. As the models are fully convolutional, they could accept any image size without modifications 
+to the architecture. For Medgemma and LLaVA-Rad, the images were resized to 896 x 896 and 518 x 518 respectively according
+to the requirements for each model.
+
+Next, the radiographs underwent Contrast Limited Adaptive Histogram Equalisation (CLAHE) using OpenCV. Adaptive Histogram 
+Equalisation is an image processing technique which calculates histograms of the pixel intensities in different parts of an 
 image. The pixel intensities are then redistributed using the histograms to improve the contrast of the image. 
 The implementation in OpenCV splits the image into a non overlapping grid and applies the technique subject to
 a clip limit which limits the amount of redistribution to reduce noise. The specific settings used were a clip 
-limit of 2 and a grid size of 4.
+limit of 2.5 and a grid size of 4.
 
 Next, the radiographs were sharpened further using unsharp masking. First, each image was processed with a 
 gaussian filter to produce a blurred version. The blurred image was then subtracted from the original image
 to produce a mask which is multiplied by a factor of 2 and added back to the original image. This process sharpens
-the image and increases contrast at edges. The sigma used for the gaussian filter was 5 for MURA dataset and 7 for the main
-dataset.
+the image and increases contrast at edges. The sigma used for the gaussian filter was 5 for the MURA dataset and 7 for the 
+main dataset.
 
-Next, the images are resized according to the model used. For the CNN models, the image size used for pretraining and
-training was 384 x 384 and 584 x 584 pixels respectively. As the models are fully convolutional, they could accept any image 
-size without issue. For Medgemma and LLaVA-Rad, the images were resized to 896 x 896 and 518 x 518 respectively according
-to the requirements for each model. Lastly, the data was augmented with geometric transformations such as random rotations, 
-scaling and translation. Brightness and contrast transformations were found to negatively impact performance and were thus
-excluded from this process.
+Lastly, the data was augmented with a combination of geometric transformations as follows: Random rotation between -60° and 60°,
+75\% probability of horizontal flip, scaling by a factor between 0.85 and 1.1 and translation along the x and y axis of between
+0.02 and 0.12. This process artificially expands the training set to reduce overfitting and improve generalisation. 
+Each image in the training set was augmented twice for the target dataset and once for the MURA dataset for a total of 
+10485 images and 73610 images respectively. Brightness and contrast transformations are also commonly used in image augmentation
+but were found to negatively impact performance and were thus excluded.
 
 \end{flushleft}
+\pagebreak
 
 \section{CNN Models}
 \label{imp:sec:CNN Models}
@@ -89,6 +131,7 @@ The framework used for the CNN models is outlined below.
   summing the per channel weights of each kernel. This allows the models to directly accept greyscale
   radiographs without affecting the output of the first layer.
 
+  \pagebreak
   \item 3. Convolutional Block Attention Module \linebreak
   Convolutional Block Attention Module (CBAM) is an attention mechanism for CNN models which can be
   incorporated into an existing architecture and trained together with the rest of the model. CBAM
@@ -119,9 +162,11 @@ The framework used for the CNN models is outlined below.
   which randomly sets 30\% of the features to 0 to mitigate overfitting. The feature vector is then
   used as the input for a small neural network to generate the final prediction.
 
+(diagram to be inserted)
 \end{itemize}
 
 \end{flushleft}
+\pagebreak
 
 \subsection{CNN Training}
 \label{imp:sec:CNN Training}
@@ -133,7 +178,7 @@ the features learnt from imagenet may not be useful. To address this issue, the 
 used for a pretraining step before training on the target dataset.
 
 For pretraining, the Stochastic Gradient Descent (SGD) optimiser was used together with a cosine annealing 
-learning rate scheduler with warm restarts. The training hyperparemeters were batch size 32, max epochs of 35, 
+learning rate scheduler with warm restarts. The training hyperparemeters were batch size of 32, max epochs of 35, 
 initial learning rate of 1.2e-3, 8e-4 and 1e-4 for ConvNeXt, EfficientNet and MobileNet respectively, momentum of 0.6 
 and weight decay of 1e-3. The cosine annealing scheduler was set to T\_0 of 5 and T\_mult of 2 which means the 
 learning rate is decayed over 5 epochs in the first cycle, 10 epochs in the second cycle and 20 in the third. 
@@ -183,7 +228,7 @@ fully connected layers and 5e-5 for the backbone.
 
 \end{flushleft}
 
-
+\pagebreak
 \section{Vision Language Models}
 \label{imp:sec:Vision Language Models}
 
@@ -202,23 +247,36 @@ image classification.
 VLMs are typically pretrained on large generic datasets to create foundation models which can then be finetuned on downstream tasks. 
 However, these datasets usually do not involve medical data which impacts the performance of these models on medical tasks. To address 
 this issue, VLMs have been specifically trained on medical datasets for use in tasks such as medical report generation and diagnosis.
-For this project, the 2 VLMs chosen are Medgemma and LLava-Rad.
+For this project, the 2 VLMs used are Medgemma 4B and LLava-Rad due to their high performance and relatively small size.
 
 Medgemma is a collection of 2 publicly available foundation models created by google and trained for a wide range of medical related tasks 
 such as radiology report generation and diagnosis. Medgemma is based on the Gemma 3 VLM and includes a 4 billion parameter and 27 billion 
 parameter variant. Both variants use the SigLIP image encoder and have been trained on a large variety of medical data such as chest 
 X-rays, histopathology slides and medical question answer pairs. LLaVA-Rad is another publicly available foundation model created by Microsoft 
-and is focused on analysing chest X-rays and generating medical reports. Unlike Medgemma, LLaVA-Rad uses the BiomedCLIP image 
-encoder and the Vicuna LLM and is trained on a large dataset of chest X-rays with corresponding radiology reports.
-
+and is focused on analysing chest X-rays and generating medical reports. LLaVA-Rad uses the BiomedCLIP image encoder and the Vicuna LLM and is 
+trained on a large dataset of chest X-rays with corresponding radiology reports. 
 \end{flushleft}
 
+\pagebreak
 \subsection{VLM Training}
 \label{imp:sec:VLM Training}
 
 \begin{flushleft}
 Finetuning the weights of an entire VLM is extremely computationally and memory intensive due to the large size of the model. Hence, a 
-technique called Low Rank Adaptation (LoRA) was used instead. LoRA is a 
+technique called Low Rank Adaptation (LoRA) was used instead. LoRA is a technique used to finetune pretrained models which involves freezing 
+the weights of the model and injecting lower rank matrices into the targeted parts of the model. During training, only these matrices are
+optimised instead of the original weights which greatly decreases the memory and time required. The matrices can then be merged with
+the original weights during inference to generate the desired output without increasing inference time.
 
+As the target dataset consists solely of images, a prompt was added to each image to analyse the radiograph and classify it as A: 'No injury'
+or B: 'Fracture or dislocation'. The correct answer is either 'No injury' or 'Fracture or dislocation' depending on the class of the image. 
+For both Medgemma and LLaVA-Rad, the pretrained weights were downloaded from Huggingface and used as a starting point for finetuning. However,
+for LLaVA-Rad, the checkpoint used for LLaVA-Rad is from the pretraining step which only tuned the image encoder. This is because the final 
+step used LoRA instead of directly tuning the encoder and LLM.
+
+The Adam-W adaptive optimiser was used instead of SGD as with the CNN models to increase the convergence speed. For Medgemma, the hyperparameters 
+used were batch size of 32 divided into 8 accumulation steps, max epochs of 5, learning rate of 8e-5 with linear scheduling, weight decay of 1e-3, 
+max grad norm of 0.03, LoRA rank of 16 and alpha of 32. For LLaVA-Rad, the different hyperparamters were max epochs of 4, learning rate of 1e-4 
+with cosine scheduling, LoRA rank of 32 and alpha of 64. For both models, the linear layers of the model and the embeddings were finetuned.
 \end{flushleft}
 
