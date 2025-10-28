@@ -16,8 +16,9 @@
 \contentsline {chapter}{\numberline {4}Evaluation}{10}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Results}{10}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Evaluation Metrics}{10}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Discussion}{10}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{11}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Summary}{11}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Future Work}{11}{section.5.2}%
-\contentsline {chapter}{References}{12}{chapter*.4}%
+\contentsline {subsection}{\numberline {4.1.2}Results}{11}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Discussion}{12}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Work}{13}{section.5.2}%
+\contentsline {chapter}{References}{14}{chapter*.4}%

@@ -4,13 +4,18 @@
 \section{Results}
 \label{sec:Results}
 
+% \begin{flushleft}
+% Training and evaluation were both performed with an RTX6000 GPU    
+% \end{flushleft}
+
 \subsection{Evaluation Metrics}
 \label{imp:sec:Evaluation Metrics}
 
 \begin{flushleft}
-The models were evaluated using accuracy, precision, recall, F1 score and AUROC (for the CNN models only).
-The metrics are calculated based on the true positive (TP), true negative (TN), false positive (FP) and
-false negative (FN) values. The equations for the first 4 metrics are as follows:
+The models were evaluated using accuracy, precision, recall, F1 score and AUC-ROC (for the CNN models only).
+The first 4 metrics are calculated based on the true positive (TP), true negative (TN), false positive (FP) and
+false negative (FN) values at a particular prediciton threshold. AUC-ROC is calculated from a plot of the sensitivity 
+of a model against specificity at different prediction thresholds. The equations are as follows:
 
 \begin{equation}
 Accuracy=\frac{TP+TN}{TP+TN+FP+FN}
@@ -28,10 +33,80 @@ Recall=\frac{TP}{TP+FN}
 F\textit{1}\,score=\frac{2*TP}{2*TP+FP+FN}
 \end{equation}
 
+\begin{equation}
+Sensitivity=\frac{TP}{TP+FN}
+\end{equation}
+
+\begin{equation}
+Specificity=\frac{TN}{TN+FP}
+\end{equation}
+
 \end{flushleft}
 
+\pagebreak
+\subsection{Results}
+\label{imp:sec:Results}
+
+\begin{flushleft}
+The 4 CNN models were evaluated at a balanced threshold of 0.5 for all metrics except AUROC. Convnext achieved 
+an accuracy of 92.5\%, precision of 92.7\%, recall of 92.2\%, F1 score of 92.4\% and AUROC of 0.976. EfficientNet 
+achieved an accuracy of 88.7\%, precision of 90.3\%, recall of 87.0\%, F1 score of 88.6\% and AUROC of 0.971.
+MobileNet achieved an accuracy of 89.8\%, precision of 86.5\%, recall of 93.2\%, F1 score of 89.7\% and AUROC of 0.953.
+The Ensemble model achieved an accuracy of 93.1\%, precision of 91.9\%, recall of 94.3\%, F1 score of 93.1\% and AUROC
+of 0.978.
+
+\begin{table}[h!] % [h!] suggests placing the table "here" if possible
+    \centering % Centers the table on the page
+    \begin{tabular}{|c|c|c|c|c|c|} % Defines column types and vertical lines
+        \hline % Horizontal line at the top
+        Model & Accuracy & Precision & Recall & F1 score & AUC-ROC \\ % Table headers
+        \hline % Horizontal line below headers
+        ConvNeXt & 0.925 & 0.927 & 0.922 & 0.924 & 0.976 \\
+        \hline % Horizontal line between rows
+        EfficientNet & 0.887 & 0.903 & 0.870 & 0.886 & 0.971 \\
+        \hline % Horizontal line between rows
+        MobileNet & 0.898 & 0.865 & 0.932 & 0.897 & 0.953 \\
+        \hline % Horizontal line between rows
+        Ensemble & 0.931 & 0.919 & 0.943 & 0.931 & 0.978 \\
+        \hline % Horizontal line at the bottom
+    \end{tabular}
+    \caption{CNN Results} % Table caption
+    \label{tab:CNN Results} % Label for referencing the table
+\end{table}
+
+(insert confusion matrix when i've done it)
+
+For MedGemma and LLaVA-Rad, the predictions are obtained from the generated text output and does not have a 
+threshold like the CNN models. Hence, AUC-ROC could not be calculated. MedGemma achieved an accuracy of 86.6\%,
+precision of 86.2\%, recall of 87.0\% and F1 score of 86.6\%. LLaVA-Rad achieved an accuracy of 90.7\%, precision of
+87.9\%, recall of 93.8\% and F1 score of 90.8\%.
+
+\begin{table}[h!] % [h!] suggests placing the table "here" if possible
+    \centering % Centers the table on the page
+    \begin{tabular}{|c|c|c|c|c|c|} % Defines column types and vertical lines
+        \hline % Horizontal line at the top
+        Model & Accuracy & Precision & Recall & F1 score & AUC-ROC \\ % Table headers
+        \hline % Horizontal line below headers
+        MedGemma & 0.866 & 0.862 & 0.870 & 0.866 & - \\
+        \hline % Horizontal line between rows
+        LLaVA-Rad & 0.907 & 0.879 & 0.938 & 0.908 & -\\
+        \hline % Horizontal line at the bottom
+    \end{tabular}
+    \caption{VLM Results} % Table caption
+    \label{tab:VLM Results} % Label for referencing the table
+\end{table}
+
+(insert confusion matrix when i've done it)
+
+\end{flushleft}
+
+\pagebreak
 \section{Discussion}
 \label{sec:Discussion}
 
+\begin{flushleft}
 
+placeholder   
+
+\end{flushleft}
 

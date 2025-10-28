@@ -66,7 +66,7 @@ validation sets is shown in Table 3.2.
 To improve the quality of the radiographs, all of the radiographs underwent preprocessing. Firstly, the images were 
 resized according to the model used. For the CNN models, the image size used for pretraining and training was 384 x 384 
 and 584 x 584 pixels respectively. As the models are fully convolutional, they could accept any image size without modifications 
-to the architecture. For Medgemma and LLaVA-Rad, the images were resized to 896 x 896 and 518 x 518 respectively according
+to the architecture. For MedGemma and LLaVA-Rad, the images were resized to 896 x 896 and 518 x 518 respectively according
 to the requirements for each model.
 
 Next, the radiographs underwent Contrast Limited Adaptive Histogram Equalisation (CLAHE) using OpenCV. Adaptive Histogram 
@@ -88,6 +88,8 @@ Lastly, the data was augmented with a combination of geometric transformations a
 Each image in the training set was augmented twice for the target dataset and once for the MURA dataset for a total of 
 10485 images and 73610 images respectively. Brightness and contrast transformations are also commonly used in image augmentation
 but were found to negatively impact performance and were thus excluded.
+
+(insert examples of images)
 
 \end{flushleft}
 \pagebreak
@@ -247,10 +249,10 @@ image classification.
 VLMs are typically pretrained on large generic datasets to create foundation models which can then be finetuned on downstream tasks. 
 However, these datasets usually do not involve medical data which impacts the performance of these models on medical tasks. To address 
 this issue, VLMs have been specifically trained on medical datasets for use in tasks such as medical report generation and diagnosis.
-For this project, the 2 VLMs used are Medgemma 4B and LLava-Rad due to their high performance and relatively small size.
+For this project, the 2 VLMs used are MedGemma 4B and LLava-Rad due to their high performance and relatively small size.
 
-Medgemma is a collection of 2 publicly available foundation models created by google and trained for a wide range of medical related tasks 
-such as radiology report generation and diagnosis. Medgemma is based on the Gemma 3 VLM and includes a 4 billion parameter and 27 billion 
+MedGemma is a collection of 2 publicly available foundation models created by google and trained for a wide range of medical related tasks 
+such as radiology report generation and diagnosis. MedGemma is based on the Gemma 3 VLM and includes a 4 billion parameter and 27 billion 
 parameter variant. Both variants use the SigLIP image encoder and have been trained on a large variety of medical data such as chest 
 X-rays, histopathology slides and medical question answer pairs. LLaVA-Rad is another publicly available foundation model created by Microsoft 
 and is focused on analysing chest X-rays and generating medical reports. LLaVA-Rad uses the BiomedCLIP image encoder and the Vicuna LLM and is 
@@ -270,11 +272,11 @@ the original weights during inference to generate the desired output without inc
 
 As the target dataset consists solely of images, a prompt was added to each image to analyse the radiograph and classify it as A: 'No injury'
 or B: 'Fracture or dislocation'. The correct answer is either 'No injury' or 'Fracture or dislocation' depending on the class of the image. 
-For both Medgemma and LLaVA-Rad, the pretrained weights were downloaded from Huggingface and used as a starting point for finetuning. However,
+For both MedGemma and LLaVA-Rad, the pretrained weights were downloaded from Huggingface and used as a starting point for finetuning. However,
 for LLaVA-Rad, the checkpoint used for LLaVA-Rad is from the pretraining step which only tuned the image encoder. This is because the final 
 step used LoRA instead of directly tuning the encoder and LLM.
 
-The Adam-W adaptive optimiser was used instead of SGD as with the CNN models to increase the convergence speed. For Medgemma, the hyperparameters 
+The Adam-W adaptive optimiser was used instead of SGD as with the CNN models to increase the convergence speed. For MedGemma, the hyperparameters 
 used were batch size of 32 divided into 8 accumulation steps, max epochs of 5, learning rate of 8e-5 with linear scheduling, weight decay of 1e-3, 
 max grad norm of 0.03, LoRA rank of 16 and alpha of 32. For LLaVA-Rad, the different hyperparamters were max epochs of 4, learning rate of 1e-4 
 with cosine scheduling, LoRA rank of 32 and alpha of 64. For both models, the linear layers of the model and the embeddings were finetuned.
