@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.14)  24 OCT 2025 12:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.14)  30 OCT 2025 01:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1273,7 +1273,7 @@ Chapter 5.
 
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20251024122344 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted cleantemp  --timestamp 20251030014330 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
 
  (./main.aux)
  ***********
@@ -1289,13 +1289,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  39954 strings out of 467747
  840592 string characters out of 5431116
- 1838080 words of memory out of 5000000
+ 1837053 words of memory out of 5000000
  68019 multiletter control sequences out of 15000+600000
  671011 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,11n,90p,740b,5052s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (21 pages, 96677 bytes).
+Output written on main.pdf (21 pages, 96659 bytes).
 PDF statistics:
  277 PDF objects out of 1000 (max. 8388607)
  239 compressed objects within 3 object streams
