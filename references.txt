@@ -5,3 +5,8 @@ https://arxiv.org/pdf/2507.05201 (medgemma)
 https://arxiv.org/pdf/2403.08002 (llava-rad)
 
 https://arxiv.org/pdf/1807.06521 (cbam)
+
+https://pmc.ncbi.nlm.nih.gov/articles/PMC10606060/#sec3-diagnostics-13-03245 (review deep learning fracture)
+
+Ahmed, K. D., & Hawezi, R. (2023). Detection of bone fracture based on machine learning techniques. Measurement: Sensors, 27, 100723. https://doi.org/10.1016/j.measen.2023.100723 
+

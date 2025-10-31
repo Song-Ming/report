@@ -2,13 +2,62 @@
 \label{chap:Related Work}
 
 \begin{flushleft}
+% https://pmc.ncbi.nlm.nih.gov/articles/PMC10557058/
+Luo et al. proposed a multiview deep learning method to classify elbow fractures, evaluated using a dataset of 1964 elbow radiographs
+which were divided into non fracture, ulnar fracture and radial fracture classes. In the single view stage, 2 Vgg16 models were trained
+on images in either the frontal view or the lateral view. The trained model weights were then reused in the frontal and lateral
+view modules of the multiview model. After feature extraction, the multiview model was split into 3 branches. 2 of the branches used the
+features of only one view for classification while the third branch merged the features of both views. If both views were available for the 
+same patient, the output of the merge branch was taken as the prediction. Otherwise, only the relevant branch would be used. The training
+process used knowledge-guided curriculum learning which involved feeding easier samples before harder samples as quantified by radiologists.
+The frontal view and lateral view models had a balanced accuracy of 57\% and 80.7\% and a binary accuracy of 73.2\% and 89.5\% respectively. 
+The multiview model had a balanced accuracy of 86.4\% and binary accuracy of 91\%.
 
-% links:
-% https://pmc.ncbi.nlm.nih.gov/articles/PMC10927121/#sec002
-% https://journals.lww.com/smj/fulltext/2025/04000/use_of_deep_learning_model_for_paediatric_elbow.8.aspx
 % https://www.mdpi.com/2227-7390/10/18/3291
-% https://www.sciencedirect.com/science/article/pii/S0167865525000340#b20
-% https://bmcmedimaging.biomedcentral.com/articles/10.1186/s12880-024-01546-4#Sec10
+Malik et al. proposed a 2 phase method to identify complex fractures using a subset of 16984 images from the MURA dataset. 
+In the first phase, the images were preprocessed and converted into RGB format. In the second phase, 2 pretrained deep learning models 
+(Darknet-53 and Xception) were used to extract features from the images. These were combined with features extracted using histogram 
+of oriented gradient and local binary pattern. The resulting feature vector then underwent feature selection using principal component 
+analysis followed by the whale optimisation algorithm. Lastly, the 1049 selected features were used to train an SVM, K-NN and neural network 
+classifier. Under 10-fold cross validation, the SVM classifier achieved 91.4\% accuracy and 0.82 kappa score, the K-NN classifier achieved
+97.1\% accuracy and 0.94 kappa score and the neural network achieved 86.5\% accuracy and 0.73 kappa score.
+
+\pagebreak
+% https://www.sciencedirect.com/science/article/pii/S2665917423000594
+Ahmed \& Hawezi investigated the use of traditional machine learning techniques to classify bone fractures. A dataset of 270 x-rays of the 
+lower leg was used for testing. First, the images were converted to greyscale and processed using a gaussian filter for denoising as well as 
+adaptive histogram equalisation and canny edge detection to improve contrast. Next, grey level co-occurence matrix (GLCM) was used to extract 
+5 texture properties (energy, correlation, dissimilarity, homogeneity, contrast) over 4 distances and 7 angles for a total of 140 features 
+per image. The GLCM features were then used to train 5 machine learning classifiers (naive bayes, decision tree, K-NN, random forest, SVM). 
+Naive bayes had an accuracy of 64.2\%, decision tree had an accuracy of 80.3\%, K-NN had an accuracy of 83.9\%, random forest had an accuracy
+of 85.7\% and SVM had an accuracy of 92.9\%.
+
+% https://pmc.ncbi.nlm.nih.gov/articles/PMC10927121/#sec002
+Alzubaidi et al. developed a trustworthy deep learning framework using the MURA dataset to detect shoulder abnormalities.The shoulder X-rays 
+were used as the target dataset and X-rays of the remaining 6 body parts were used for pretraining. A total of 7 individual deep learning models 
+(Xception, Inception-ResNetV2, MobilNetV2, EfficientNetb0, DenseNet201,ResNet101, NasNetlarge) were pretrained on MURA followed by finetuning on 
+the shoulder X-rays. The features of the individual models were then extracted at the fully connected layers and combined through feature fusion 
+and used to train several classifiers such as logistic regression and SVM. The best classifier achieved an accuracy of 99.2\% with pretraining and 
+78.5\% without pretraining which was a significant improvement over the individual models which ranged from 72.4\% to 77.6\% accuracy and 
+65.7\% to 72.6\% accuracy respectively. This surpassed the performance of 3 surgeons invited to classify the dataset who had an average 
+accuracy of 79.1\%. The individual deep learning models were further validated using activation visualiation and locally interpretable 
+model-independent explanations for intepretability of outputs.
+
 % https://www.sciencedirect.com/science/article/pii/S0009926024004197
+Tahir et al. proposed an ensemble of 4 CNN models (MobileNetV2, Vgg16, InceptionV3, ResNet50) to detect bone fractures. The ensemble consisted 
+of a logistic regression model trained on the output probabilities of the individual models. The dataset used was the subset of 6542 humerus 
+radiographs from the MURA dataset. The images were processed with histogram equalisation to improve contrast followed by data augmentation using 
+random rotations, horizontal flipping and random scaling. On the validation set, the 4 individual models achieved an accuracy of 88\%, 82.2\%, 81\% 
+and 86\% respectively while the ensemble model had an accuracy of 93\%.
+
+\pagebreak
+% https://bmcmedimaging.biomedcentral.com/articles/10.1186/s12880-024-01546-4#Sec10
+Alam et al. introduced a model called MobLG-Net to extract features for training machine learning classifiers. The method was tested on 
+a publicly available dataset on Kaggle consisting of 9463 X-rays of various body parts. MobLG-Net consists of the pretrained input layer of 
+MobileNet combined with a custom sequential model with convolutional layers, pooling, dropout and fully connected layers. The features extracted
+by MobLG-Net were then used to train several classifiers such as light gradient boosting machine and logistic regression. The classifiers trained 
+using this approach had an accuracy of 97.6\% to 98.5\% with k-fold cross validation.
+
 \end{flushleft}
+
 
