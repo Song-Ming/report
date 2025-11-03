@@ -6,12 +6,11 @@
 Luo et al. proposed a multiview deep learning method to classify elbow fractures, evaluated using a dataset of 1964 elbow radiographs
 which were divided into non fracture, ulnar fracture and radial fracture classes. In the single view stage, 2 Vgg16 models were trained
 on images in either the frontal view or the lateral view. The trained model weights were then reused in the frontal and lateral
-view modules of the multiview model. After feature extraction, the multiview model was split into 3 branches. 2 of the branches used the
-features of only one view for classification while the third branch merged the features of both views. If both views were available for the 
-same patient, the output of the merge branch was taken as the prediction. Otherwise, only the relevant branch would be used. The training
-process used knowledge-guided curriculum learning which involved feeding easier samples before harder samples as quantified by radiologists.
-The frontal view and lateral view models had a balanced accuracy of 57\% and 80.7\% and a binary accuracy of 73.2\% and 89.5\% respectively. 
-The multiview model had a balanced accuracy of 86.4\% and binary accuracy of 91\%.
+view modules of the multiview model. After feature extraction, the multiview model was split into 2 single view branches and one which
+combined features from both views. If both views were available for the same patient, the output of the merge branch was taken as the prediction. 
+Otherwise, only the relevant branch would be used. The training process used knowledge-guided curriculum learning which involved feeding easier 
+samples before harder samples as quantified by radiologists. The frontal view and lateral view models had a balanced accuracy of 57\% and 80.7\% 
+and a binary accuracy of 73.2\% and 89.5\% respectively. The multiview model had a balanced accuracy of 86.4\% and binary accuracy of 91\%.
 
 % https://www.mdpi.com/2227-7390/10/18/3291
 Malik et al. proposed a 2 phase method to identify complex fractures using a subset of 16984 images from the MURA dataset. 
@@ -33,15 +32,14 @@ Naive bayes had an accuracy of 64.2\%, decision tree had an accuracy of 80.3\%, 
 of 85.7\% and SVM had an accuracy of 92.9\%.
 
 % https://pmc.ncbi.nlm.nih.gov/articles/PMC10927121/#sec002
-Alzubaidi et al. developed a trustworthy deep learning framework using the MURA dataset to detect shoulder abnormalities.The shoulder X-rays 
+Alzubaidi et al. developed a trustworthy deep learning framework using the MURA dataset to detect shoulder abnormalities. The shoulder X-rays 
 were used as the target dataset and X-rays of the remaining 6 body parts were used for pretraining. A total of 7 individual deep learning models 
-(Xception, Inception-ResNetV2, MobilNetV2, EfficientNetb0, DenseNet201,ResNet101, NasNetlarge) were pretrained on MURA followed by finetuning on 
-the shoulder X-rays. The features of the individual models were then extracted at the fully connected layers and combined through feature fusion 
-and used to train several classifiers such as logistic regression and SVM. The best classifier achieved an accuracy of 99.2\% with pretraining and 
-78.5\% without pretraining which was a significant improvement over the individual models which ranged from 72.4\% to 77.6\% accuracy and 
-65.7\% to 72.6\% accuracy respectively. This surpassed the performance of 3 surgeons invited to classify the dataset who had an average 
-accuracy of 79.1\%. The individual deep learning models were further validated using activation visualiation and locally interpretable 
-model-independent explanations for intepretability of outputs.
+were pretrained on MURA followed by finetuning on the shoulder X-rays. The features of the individual models were then extracted at the fully 
+connected layers and combined through feature fusion and used to train several classifiers such as logistic regression and SVM. The best 
+classifier achieved an accuracy of 99.2\% with pretraining and 78.5\% without pretraining which was a significant improvement over the individual 
+models which ranged from 72.4\% to 77.6\% accuracy and 65.7\% to 72.6\% accuracy respectively. This surpassed the performance of 3 surgeons invited 
+to classify the dataset who had an average accuracy of 79.1\%. The individual deep learning models were further validated using activation 
+visualiation and locally interpretable model-independent explanations for intepretability of outputs.
 
 % https://www.sciencedirect.com/science/article/pii/S0009926024004197
 Tahir et al. proposed an ensemble of 4 CNN models (MobileNetV2, Vgg16, InceptionV3, ResNet50) to detect bone fractures. The ensemble consisted 
@@ -50,13 +48,12 @@ radiographs from the MURA dataset. The images were processed with histogram equa
 random rotations, horizontal flipping and random scaling. On the validation set, the 4 individual models achieved an accuracy of 88\%, 82.2\%, 81\% 
 and 86\% respectively while the ensemble model had an accuracy of 93\%.
 
-\pagebreak
 % https://bmcmedimaging.biomedcentral.com/articles/10.1186/s12880-024-01546-4#Sec10
 Alam et al. introduced a model called MobLG-Net to extract features for training machine learning classifiers. The method was tested on 
 a publicly available dataset on Kaggle consisting of 9463 X-rays of various body parts. MobLG-Net consists of the pretrained input layer of 
 MobileNet combined with a custom sequential model with convolutional layers, pooling, dropout and fully connected layers. The features extracted
 by MobLG-Net were then used to train several classifiers such as light gradient boosting machine and logistic regression. The classifiers trained 
-using this approach had an accuracy of 97.6\% to 98.5\% with k-fold cross validation.
+using this approach had an average accuracy of 97.6\% to 98.5\%.
 
 \end{flushleft}
 

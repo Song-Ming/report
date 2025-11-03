@@ -2,15 +2,52 @@
 \label{chap:Introduction}
 
 \begin{flushleft}
-- elbow fractures are ...
+Bone fractures are a significant health concern globally with 178 million new cases and 455 million prevalent cases of acute or long term 
+symptoms in 2019 alone. [1] Elbow fractures in particular are one of the most common types of bone fractures among children, accounting for over 
+10\% of paediatric fractures and up to 5\% of fractures among adults. Accurate and timely diagnosis of elbow fractures is important to avoid 
+potential complications such as joint stiffness, malunion and vascular injury. [2] However, intepretation of elbow X-rays is a difficult task.
+Some parts of the anatomy of the elbow are obscured depending on the perspective of the X-ray (anteroposterior, lateral or oblique) and 
+non displaced elbow fractures are difficult to spot on X-rays [3]. Diagnosis of paediatric elbow fractures is especially difficult due to the
+differences in anatomy and injury patterns from the adult elbow such as the presence of ossification centres [4].
 
-- ai is used in ...
+Recent advances in machine learning and deep learning have allowed for the use of automated systems to quickly detect fractures from X-rays. 
+These often rely on convolutional neural networks (CNN) which are able to automatically learn complex features and patterns from images
+and have been shown to have excellent performance in fracture detection, on par with or exceeding trained radiologists [5]. The use of these
+automated systems could help support doctors in accurately diagnosing elbow fractures, especially in emergency settings and for paediatric elbow 
+fractures which may be initially reviewed by radiologists who do not specialise in paediatrics [6,7]. 
 
-- compare between cnns and vision language models
+One challenge faced by CNN models as well as other deep learning models is the amount of available data which is often limited in medical domains. 
+To address this, deep learning models can be pretrained on other datasets which are related to the target dataset. In the case of diagnosing elbow 
+fractures, this can include pretraining on X-rays of other bones such as the shoulder, or even X-rays of other body parts such as chest X-rays [8].
+Other techniques to improve the performance of deep learning models include the use of attention mechanisms which allow the model to focus on 
+important parts of an image and ensembling techniques to combine the output of multiple models.
 
-- lora allows foundation model to be tuned for many tasks, lora module can be swapped
+Other than CNN models, another area that shows potential is the use of vision language foundation models. Foundation models are pretrained
+on huge multimodal datasets which contain both image and text and cover many different domains. This allows the models to perform a wide
+variety of tasks with or without task specific finetuning. Foundation models developed for general purposes may not perform well in the medical 
+domain due to the lack of medical data in their training sets. However, there have also been foundation models which been specifically trained 
+for medical domains to perform tasks such as generating medical reports or segmenting images [9]. Although foundation models are much larger
+and more computationally expensive than CNNs, the same model could potentially be used for many different medical tasks including those which
+combine image and text data which is a significant advantage over a CNN which is more narrow.
 
+This project aims to compare and evaluate the performance of CNNs and vision language foundation models on detecting elbow fractures.
 \end{flushleft}
 
+% 1. https://pubmed.ncbi.nlm.nih.gov/34723233/
 
+% 2. https://www.ncbi.nlm.nih.gov/books/NBK441976/ 
+
+% 3. https://www.sciencedirect.com/science/article/abs/pii/S0735675706000258
+
+% 4. https://ajronline.org/doi/full/10.2214/AJR.10.7314
+
+% 5. https://pmc.ncbi.nlm.nih.gov/articles/PMC10826962/#sec002
+
+% 6. https://pubmed.ncbi.nlm.nih.gov/30348771/
+
+% 7. https://www.cambridge.org/core/journals/canadian-journal-of-emergency-medicine/article/determining-the-clinical-significance-of-errors-in-pediatric-radiograph-interpretation-between-emergency-physicians-and-radiologists/E25C5BDFC9E08F894CEA7755A01591E4
+
+% 8. https://www.mdpi.com/2072-6694/15/15/4007
+
+% 9. https://arxiv.org/pdf/2406.10729
 

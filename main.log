@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.14)  1 NOV 2025 03:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.14)  3 NOV 2025 12:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1213,25 +1213,25 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] (./chapters/intro.tex
 Chapter 1.
-) (./chapters/related.tex
+
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1 \chapter
-            {Related Work} [1
+l.24 
+      [1
 
 
-]
+]) (./chapters/related.tex
+
+[2]
 Chapter 2.
 
 
-[2
+[3
 
-]
-
-[3]) (./chapters/methods.tex
+]) (./chapters/methods.tex
 
 [4]
 Chapter 3.
@@ -1272,7 +1272,7 @@ Chapter 5.
 [15
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20251101031419 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted cleantemp  --timestamp 20251103122845 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
 
  (./main.aux)
  ***********
@@ -1288,13 +1288,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  39715 strings out of 467747
  835472 string characters out of 5431116
- 1836958 words of memory out of 5000000
+ 1836959 words of memory out of 5000000
  67781 multiletter control sequences out of 15000+600000
  671011 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,11n,90p,740b,5052s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (22 pages, 94128 bytes).
+Output written on main.pdf (22 pages, 95897 bytes).
 PDF statistics:
  272 PDF objects out of 1000 (max. 8388607)
  233 compressed objects within 3 object streams
