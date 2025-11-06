@@ -49,10 +49,10 @@ Specificity=\frac{TN}{TN+FP}
 
 \begin{flushleft}
 The 4 CNN models were evaluated at a balanced threshold of 0.5 for all metrics except AUROC. Convnext achieved 
-an accuracy of 92.5\%, precision of 92.7\%, recall of 92.2\%, F1 score of 92.4\% and AUROC of 0.976. EfficientNet 
-achieved an accuracy of 88.7\%, precision of 90.3\%, recall of 87.0\%, F1 score of 88.6\% and AUROC of 0.971.
-MobileNet achieved an accuracy of 89.8\%, precision of 86.5\%, recall of 93.2\%, F1 score of 89.7\% and AUROC of 0.953.
-The Ensemble model achieved an accuracy of 93.1\%, precision of 91.9\%, recall of 94.3\%, F1 score of 93.1\% and AUROC
+an accuracy of 93.4\%, precision of 92.7\%, recall of 92.2\%, F1 score of 92.5\% and AUROC of 0.976. EfficientNet 
+achieved an accuracy of 90.1\%, precision of 90.3\%, recall of 87.0\%, F1 score of 88.7\% and AUROC of 0.971.
+MobileNet achieved an accuracy of 90.6\%, precision of 86.5\%, recall of 93.2\%, F1 score of 89.8\% and AUROC of 0.953.
+The Ensemble model achieved an accuracy of 93.8\%, precision of 91.9\%, recall of 94.3\%, F1 score of 93.1\% and AUROC
 of 0.978.
 
 \begin{table}[h!] % [h!] suggests placing the table "here" if possible
@@ -61,13 +61,13 @@ of 0.978.
         \hline % Horizontal line at the top
         Model & Accuracy & Precision & Recall & F1 score & AUC-ROC \\ % Table headers
         \hline % Horizontal line below headers
-        ConvNeXt & 0.925 & 0.927 & 0.922 & 0.924 & 0.976 \\
+        ConvNeXt & 0.934 & 0.927 & 0.922 & 0.925 & 0.976 \\
         \hline % Horizontal line between rows
-        EfficientNet & 0.887 & 0.903 & 0.870 & 0.886 & 0.971 \\
+        EfficientNet & 0.901 & 0.903 & 0.870 & 0.887 & 0.971 \\
         \hline % Horizontal line between rows
-        MobileNet & 0.898 & 0.865 & 0.932 & 0.897 & 0.953 \\
+        MobileNet & 0.906 & 0.865 & 0.932 & 0.898 & 0.953 \\
         \hline % Horizontal line between rows
-        Ensemble & 0.931 & 0.919 & 0.943 & 0.931 & 0.978 \\
+        Ensemble & 0.938 & 0.919 & 0.943 & 0.931 & 0.978 \\
         \hline % Horizontal line at the bottom
     \end{tabular}
     \caption{CNN Results} % Table caption
@@ -76,10 +76,10 @@ of 0.978.
 
 (insert confusion matrix when i've done it)
 
-For MedGemma and LLaVA-Rad, the predictions are obtained from the generated text output and does not have a 
-threshold like the CNN models. Hence, AUC-ROC could not be calculated. MedGemma achieved an accuracy of 86.6\%,
-precision of 86.2\%, recall of 87.0\% and F1 score of 86.6\%. LLaVA-Rad achieved an accuracy of 90.7\%, precision of
-87.9\%, recall of 93.8\% and F1 score of 90.8\%.
+Without pretraining or any changes to the architecture from the publicly available version, Convnext achieved 
+an accuracy of 90.6\%, precision of 87.3\%, recall of 92.2\%, F1 score of 89.7\% and AUROC of 0.945. EfficientNet 
+achieved an accuracy of 87.0\%, precision of 83.7\%, recall of 87.6\%, F1 score of 85.6\% and AUROC of 0.941.
+MobileNet achieved an accuracy of 89.2\%, precision of 86.1\%, recall of 90.2\%, F1 score of 88.1\% and AUROC of 0.935.
 
 \begin{table}[h!] % [h!] suggests placing the table "here" if possible
     \centering % Centers the table on the page
@@ -87,9 +87,31 @@ precision of 86.2\%, recall of 87.0\% and F1 score of 86.6\%. LLaVA-Rad achieved
         \hline % Horizontal line at the top
         Model & Accuracy & Precision & Recall & F1 score & AUC-ROC \\ % Table headers
         \hline % Horizontal line below headers
-        MedGemma & 0.866 & 0.862 & 0.870 & 0.866 & - \\
+        ConvNeXt & 0.906 & 0.873 & 0.922 & 0.897 & 0.945 \\
         \hline % Horizontal line between rows
-        LLaVA-Rad & 0.907 & 0.879 & 0.938 & 0.908 & -\\
+        EfficientNet & 0.870 & 0.837 & 0.876 & 0.856 & 0.941 \\
+        \hline % Horizontal line between rows
+        MobileNet & 0.892 & 0.861 & 0.902 & 0.881 & 0.935 \\
+        \hline % Horizontal line at the bottom
+    \end{tabular}
+    \caption{CNN Results Without Pretraining} % Table caption
+    \label{tab:CNN Results Without Pretraining} % Label for referencing the table
+\end{table}
+
+For MedGemma and LLaVA-Rad, the predictions are obtained from the generated text output and does not have a 
+threshold like the CNN models. Hence, AUC-ROC could not be calculated. MedGemma achieved an accuracy of 88.1\%,
+precision of 86.2\%, recall of 87.0\% and F1 score of 86.6\%. LLaVA-Rad achieved an accuracy of 91.5\%, precision of
+87.9\%, recall of 93.8\% and F1 score of 90.7\%.
+
+\begin{table}[h!] % [h!] suggests placing the table "here" if possible
+    \centering % Centers the table on the page
+    \begin{tabular}{|c|c|c|c|c|c|} % Defines column types and vertical lines
+        \hline % Horizontal line at the top
+        Model & Accuracy & Precision & Recall & F1 score & AUC-ROC \\ % Table headers
+        \hline % Horizontal line below headers
+        MedGemma & 0.881 & 0.862 & 0.870 & 0.866 & - \\
+        \hline % Horizontal line between rows
+        LLaVA-Rad & 0.915 & 0.879 & 0.938 & 0.907 & -\\
         \hline % Horizontal line at the bottom
     \end{tabular}
     \caption{VLM Results} % Table caption
