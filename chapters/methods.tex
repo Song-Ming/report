@@ -164,12 +164,39 @@ The framework used for the CNN models is outlined below.
   which randomly sets 30\% of the features to 0 to mitigate overfitting. The feature vector is then
   used as the input for a small neural network to generate the final prediction.
 
-(diagram to be inserted)
+\pagebreak
+\begin{figure}[ht] % [h!] suggests "here" but allows LaTeX to adjust placement
+    \centering % Centers the entire figure environment
+    
+    \begin{subfigure}[b]{0.32\textwidth} % [b] for bottom alignment, width is 45% of text width
+        \centering
+        \includegraphics[height=0.92\textheight,keepaspectratio]{Convnext model.png} % image1.png will fill the subfigure width
+        \caption{Convnext architecture}
+        \label{fig:archi 1}
+    \end{subfigure}
+    \hfill % Horizontal fill to create space between subfigures
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[height=0.92\textheight,keepaspectratio]{EfficientNet model.png}
+        \caption{EfficientNet architecture}
+        \label{fig:archi 2}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[height=0.92\textheight,keepaspectratio]{MobileNet model.png}
+        \caption{MobileNet architecture}
+        \label{fig:archi 3}
+    \end{subfigure}
+
+    \caption{Architecture}
+    \label{fig:Architecture}
+\end{figure}
+
 \end{itemize}
 
 \end{flushleft}
-\pagebreak
 
+\clearpage
 \subsection{CNN Training}
 \label{imp:sec:CNN Training}
 
@@ -190,44 +217,6 @@ The hyperparameters for training were largely the same as pretraining. The diffe
 momentum of 0.8 and 0.7 for ConvNeXt and EfficientNet respectively and T\_0 of 4. Lastly, for the ensemble model, 
 the different hyperparameters were max epochs of 12, momentum of 0.8 and initial learning rate of 2e-4 for the
 fully connected layers and 5e-5 for the backbone.
-
-% The training parameters used for each stage are listed in the tables below.
-% \begin{table}[h!] % [h!] suggests placing the table "here" if possible
-%     \centering % Centers the table on the page
-%     \begin{tabular}{|c|c|c|c|c|c|} % Defines column types and vertical lines
-%         \hline % Horizontal line at the top
-%         Model & Max Epochs & Learning Rate & Momentum & T\_0 & Weight Decay \\ % Table headers
-%         \hline % Horizontal line below headers
-%         ConvNeXt & 35 & 1.2e-3 & 0.6 & 5 & 1e-3 \\
-%         \hline % Horizontal line between rows
-%         EfficientNet & 35 & 8e-4 & 0.6 & 5 & 1e-3 \\
-%         \hline % Horizontal line between rows
-%         MobileNet & 35 & 1e-4 & 0.6 & 5 & 1e-3 \\
-%         \hline % Horizontal line at the bottom
-%     \end{tabular}
-%     \caption{Pretraining} % Table caption
-%     \label{tab:Pretraining} % Label for referencing the table
-% \end{table}
-
-% \begin{table}[h!] % [h!] suggests placing the table "here" if possible
-%     \centering % Centers the table on the page
-%     \begin{tabular}{|c|c|c|c|c|c|} % Defines column types and vertical lines
-%         \hline % Horizontal line at the top
-%         Model & Max Epochs & Learning Rate & Momentum & T\_0 & Weight Decay \\ % Table headers
-%         \hline % Horizontal line below headers
-%         ConvNeXt & 28 & 1.2e-4 & 0.8 & 4 & 1e-3 \\
-%         \hline % Horizontal line between rows
-%         EfficientNet & 28 & 8e-4 & 0.6 & 4 & 1e-3 \\
-%         \hline % Horizontal line between rows
-%         MobileNet & 28 & 1e-4 & 0.7 & 4 & 1e-3 \\
-%         \hline % Horizontal line between rows
-%         Ensemble & 12 & 2e-4 & 0.8 & 4 & 1e-3 \\
-%         \hline % Horizontal line at the bottom
-%     \end{tabular}
-%     \caption{Training} % Table caption
-%     \label{tab:Training} % Label for referencing the table
-% \end{table}
-
 \end{flushleft}
 
 \pagebreak

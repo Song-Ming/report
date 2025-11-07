@@ -70,11 +70,9 @@ of 0.978.
         Ensemble & 0.938 & 0.919 & 0.943 & 0.931 & 0.978 \\
         \hline % Horizontal line at the bottom
     \end{tabular}
-    \caption{CNN Results} % Table caption
-    \label{tab:CNN Results} % Label for referencing the table
+    \caption{CNN results} % Table caption
+    \label{tab:CNN results} % Label for referencing the table
 \end{table}
-
-(insert confusion matrix when i've done it)
 
 Without pretraining or any changes to the architecture from the publicly available version, Convnext achieved 
 an accuracy of 90.6\%, precision of 87.3\%, recall of 92.2\%, F1 score of 89.7\% and AUROC of 0.945. EfficientNet 
@@ -94,8 +92,8 @@ MobileNet achieved an accuracy of 89.2\%, precision of 86.1\%, recall of 90.2\%,
         MobileNet & 0.892 & 0.861 & 0.902 & 0.881 & 0.935 \\
         \hline % Horizontal line at the bottom
     \end{tabular}
-    \caption{CNN Results Without Pretraining} % Table caption
-    \label{tab:CNN Results Without Pretraining} % Label for referencing the table
+    \caption{CNN results Without pretraining} % Table caption
+    \label{tab:CNN results Without pretraining} % Label for referencing the table
 \end{table}
 
 For MedGemma and LLaVA-Rad, the predictions are obtained from the generated text output and does not have a 
@@ -114,12 +112,97 @@ precision of 86.2\%, recall of 87.0\% and F1 score of 86.6\%. LLaVA-Rad achieved
         LLaVA-Rad & 0.915 & 0.879 & 0.938 & 0.907 & -\\
         \hline % Horizontal line at the bottom
     \end{tabular}
-    \caption{VLM Results} % Table caption
-    \label{tab:VLM Results} % Label for referencing the table
+    \caption{VLM results} % Table caption
+    \label{tab:VLM results} % Label for referencing the table
 \end{table}
 
-(insert confusion matrix when i've done it)
+\pagebreak
+\begin{figure}[ht] % [h!] suggests "here" but allows LaTeX to adjust placement
+    \centering % Centers the entire figure environment
 
+    \begin{subfigure}[b]{0.45\textwidth} % [b] for bottom alignment, width is 45% of text width
+        \includegraphics[width=\textwidth]{Convnext.png} % image1.png will fill the subfigure width
+        \caption{Convnext}
+        \label{fig:matrix1}
+    \end{subfigure}
+    \hfill % Horizontal fill to create space between subfigures
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{EfficientNet.png}
+        \caption{EfficientNet}
+        \label{fig:matrix2}
+    \end{subfigure}
+
+    \vspace{1em} % Vertical space between rows
+
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{MobileNet.png}
+        \caption{MobileNet}
+        \label{fig:matrix3}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{Ensemble.png}
+        \caption{Ensemble}
+        \label{fig:matrix4}
+    \end{subfigure}
+
+    \caption{Confusion matrices for CNN models}
+    \label{fig:Confusion matrices for CNN models}
+\end{figure}
+
+\pagebreak
+\begin{figure}[ht] % [h!] suggests "here" but allows LaTeX to adjust placement
+    \centering % Centers the entire figure environment
+
+    \begin{subfigure}[b]{0.45\textwidth} % [b] for bottom alignment, width is 45% of text width
+        \includegraphics[width=\textwidth]{Convnext base.png} % image1.png will fill the subfigure width
+        \caption{Convnext}
+        \label{fig:matrix5}
+    \end{subfigure}
+    \hfill % Horizontal fill to create space between subfigures
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{EfficientNet base.png}
+        \caption{EfficientNet}
+        \label{fig:matrix6}
+    \end{subfigure}
+
+    \vspace{1em} % Vertical space between rows
+
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{MobileNet base.png}
+        \caption{MobileNet}
+        \label{fig:matrix7}
+    \end{subfigure}
+    \hfill
+    % \begin{subfigure}[b]{0.45\textwidth}
+    %     \includegraphics[width=\textwidth]{Ensemble.png}
+    %     \caption{Ensemble}
+    %     \label{fig:image4}
+    % \end{subfigure}
+
+    \caption{Confusion matrices for CNN models without pretraining}
+    \label{fig:Confusion matrices for CNN models without pretraining}
+\end{figure}
+
+\pagebreak
+\begin{figure}[ht] % [h!] suggests "here" but allows LaTeX to adjust placement
+    \centering % Centers the entire figure environment
+
+    \begin{subfigure}[b]{0.45\textwidth} % [b] for bottom alignment, width is 45% of text width
+        \includegraphics[width=\textwidth]{MedGemma.png} % image1.png will fill the subfigure width
+        \caption{Medgemma}
+        \label{fig:matrix8}
+    \end{subfigure}
+    \hfill % Horizontal fill to create space between subfigures
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{LLaVA-Rad.png}
+        \caption{LLaVA-Rad}
+        \label{fig:matrix9}
+    \end{subfigure}
+
+    \caption{Confusion matrices for VLM models}
+    \label{fig:Confusion matrices for VLM models}
+\end{figure}
 \end{flushleft}
 
 \pagebreak

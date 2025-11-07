@@ -1,5 +1,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Architecture}}{9}{figure.caption.5}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Confusion matrices for CNN models}}{15}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Confusion matrices for CNN models without pretraining}}{16}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Confusion matrices for VLM models}}{17}{figure.caption.11}%
 \addvspace {10\p@ }

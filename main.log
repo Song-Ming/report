@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.14)  7 NOV 2025 01:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.14)  7 NOV 2025 18:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -516,6 +516,31 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 )
 \Gin@req@height=\dimen185
 \Gin@req@width=\dimen186
+) (c:/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen187
+\captionmargin=\dimen188
+\caption@leftmargin=\dimen189
+\caption@rightmargin=\dimen190
+\caption@width=\dimen191
+\caption@indent=\dimen192
+\caption@parindent=\dimen193
+\caption@hangindent=\dimen194
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count459
+\c@continuedfloat=\count460
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count461
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count462
 ) (c:/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
  (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -537,7 +562,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
 \everycr=\toks25
 \minrowclearance=\skip78
-\rownum=\count459
+\rownum=\count463
 ) (c:/texlive/2025/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2025/05/14 v3.7.0 Yet another Pygments shim for LaTeX
  (c:/texlive/2025/texmf-dist/tex/generic/catchfile/catchfile.sty
@@ -548,11 +573,11 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 Package: fvextra 2025/05/29 v1.13.2 fvextra - extensions and patches for fancyvrb
  (c:/texlive/2025/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count460
+\FV@CodeLineNo=\count464
 \FV@InFile=\read3
 \FV@TabBox=\box65
-\c@FancyVerbLine=\count461
-\FV@StepNumber=\count462
+\c@FancyVerbLine=\count465
+\FV@StepNumber=\count466
 \FV@OutFile=\write4
 ) (c:/texlive/2025/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
@@ -560,47 +585,47 @@ Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbat
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )) (c:/texlive/2025/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2025/05/13 line numbers on paragraphs v5.5
-\linenopenalty=\count463
+\linenopenalty=\count467
 \output=\toks26
-\linenoprevgraf=\count464
-\linenumbersep=\dimen187
-\linenumberwidth=\dimen188
-\c@linenumber=\count465
-\c@pagewiselinenumber=\count466
-\c@LN@truepage=\count467
-\c@internallinenumber=\count468
-\c@internallinenumbers=\count469
-\quotelinenumbersep=\dimen189
-\bframerule=\dimen190
-\bframesep=\dimen191
+\linenoprevgraf=\count468
+\linenumbersep=\dimen195
+\linenumberwidth=\dimen196
+\c@linenumber=\count469
+\c@pagewiselinenumber=\count470
+\c@LN@truepage=\count471
+\c@internallinenumber=\count472
+\c@internallinenumbers=\count473
+\quotelinenumbersep=\dimen197
+\bframerule=\dimen198
+\bframesep=\dimen199
 \bframebox=\box66
 )
-\c@FancyVerbWriteLine=\count470
-\c@FancyVerbBufferLine=\count471
-\c@FV@TrueTabGroupLevel=\count472
-\c@FV@TrueTabCounter=\count473
+\c@FancyVerbWriteLine=\count474
+\c@FancyVerbBufferLine=\count475
+\c@FV@TrueTabGroupLevel=\count476
+\c@FV@TrueTabCounter=\count477
 \FV@TabBox@Group=\box67
 \FV@bgcolorstructbox=\box68
 \FV@TmpLength=\skip79
-\c@FV@HighlightLinesStart=\count474
-\c@FV@HighlightLinesStop=\count475
-\FV@LoopCount=\count476
+\c@FV@HighlightLinesStart=\count478
+\c@FV@HighlightLinesStop=\count479
+\FV@LoopCount=\count480
 \FV@NCharsBox=\box69
-\FV@BreakIndent=\dimen192
-\FV@BreakIndentNChars=\count477
-\FV@BreakSymbolSepLeft=\dimen193
-\FV@BreakSymbolSepLeftNChars=\count478
-\FV@BreakSymbolSepRight=\dimen194
-\FV@BreakSymbolSepRightNChars=\count479
-\FV@BreakSymbolIndentLeft=\dimen195
-\FV@BreakSymbolIndentLeftNChars=\count480
-\FV@BreakSymbolIndentRight=\dimen196
-\FV@BreakSymbolIndentRightNChars=\count481
-\c@FancyVerbLineBreakLast=\count482
+\FV@BreakIndent=\dimen256
+\FV@BreakIndentNChars=\count481
+\FV@BreakSymbolSepLeft=\dimen257
+\FV@BreakSymbolSepLeftNChars=\count482
+\FV@BreakSymbolSepRight=\dimen258
+\FV@BreakSymbolSepRightNChars=\count483
+\FV@BreakSymbolIndentLeft=\dimen259
+\FV@BreakSymbolIndentLeftNChars=\count484
+\FV@BreakSymbolIndentRight=\dimen260
+\FV@BreakSymbolIndentRightNChars=\count485
+\c@FancyVerbLineBreakLast=\count486
 \FV@LineBox=\box70
 \FV@LineIndentBox=\box71
-\c@FV@BreakBufferDepth=\count483
-\FV@LineWidth=\dimen197
+\c@FV@BreakBufferDepth=\count487
+\FV@LineWidth=\dimen261
 ) (c:/texlive/2025/texmf-dist/tex/latex/latex2pydata/latex2pydata.sty
 Package: latex2pydata 2025/03/26 v0.6.0 latex2pydata - write data to file in Python literal format
 ) (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
@@ -616,9 +641,9 @@ Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
-\c@minted@FancyVerbLineTemp=\count484
+\c@minted@FancyVerbLineTemp=\count488
 \@float@every@listing=\toks32
-\c@listing=\count485
+\c@listing=\count489
 ) (c:/texlive/2025/texmf-dist/tex/latex/mdframed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
  (c:/texlive/2025/texmf-dist/tex/latex/zref/zref-abspage.sty
@@ -632,13 +657,13 @@ Package zref Info: New property list: main on input line 767.
 Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
-\c@abspage=\count486
+\c@abspage=\count490
 Package zref Info: New property: abspage on input line 67.
 ) (c:/texlive/2025/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2025/03/13 v1.3e reserve vertical space
 )
 \mdf@templength=\skip80
-\c@mdf@globalstyle@cnt=\count487
+\c@mdf@globalstyle@cnt=\count491
 \mdf@skipabove@length=\skip81
 \mdf@skipbelow@length=\skip82
 \mdf@leftmargin@length=\skip83
@@ -713,48 +738,48 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip144
 \mdfsubtitleheight=\skip145
 \mdfsubsubtitleheight=\skip146
-\c@mdfcountframes=\count488
+\c@mdfcountframes=\count492
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count489
-\c@mdf@env@i=\count490
-\c@mdf@env@ii=\count491
-\c@mdf@zref@counter=\count492
+\mdf@envdepth=\count493
+\c@mdf@env@i=\count494
+\c@mdf@env@ii=\count495
+\c@mdf@zref@counter=\count496
 Package zref Info: New property: mdf@pagevalue on input line 895.
 ) (c:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip147
-\enit@outerparindent=\dimen198
+\enit@outerparindent=\dimen262
 \enit@toks=\toks33
 \enit@inbox=\box77
-\enit@count@id=\count493
-\enitdp@description=\count494
+\enit@count@id=\count497
+\enitdp@description=\count498
 ) (c:/texlive/2025/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 ) (c:/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (c:/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count495
+\lst@mode=\count499
 \lst@gtempboxa=\box78
 \lst@token=\toks34
-\lst@length=\count496
-\lst@currlwidth=\dimen199
-\lst@column=\count497
-\lst@pos=\count498
-\lst@lostspace=\dimen256
-\lst@width=\dimen257
-\lst@newlines=\count499
-\lst@lineno=\count500
-\lst@maxwidth=\dimen258
+\lst@length=\count500
+\lst@currlwidth=\dimen263
+\lst@column=\count501
+\lst@pos=\count502
+\lst@lostspace=\dimen264
+\lst@width=\dimen265
+\lst@newlines=\count503
+\lst@lineno=\count504
+\lst@maxwidth=\dimen266
  (c:/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 ) (c:/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count501
-\lst@skipnumbers=\count502
+\c@lstnumber=\count505
+\lst@skipnumbers=\count506
 \lst@framebox=\box79
 ) (c:/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
@@ -763,29 +788,29 @@ Package: listings 2024/09/23 1.10c (Carsten Heinz)
  (c:/texlive/2025/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
 \@float@every@algorithm=\toks35
-\c@algorithm=\count503
+\c@algorithm=\count507
 ) (c:/texlive/2025/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
  (c:/texlive/2025/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count504
-\c@ALG@rem=\count505
-\c@ALG@nested=\count506
+\c@ALG@line=\count508
+\c@ALG@rem=\count509
+\c@ALG@nested=\count510
 \ALG@tlm=\skip148
 \ALG@thistlm=\skip149
-\c@ALG@Lnr=\count507
-\c@ALG@blocknr=\count508
-\c@ALG@storecount=\count509
-\c@ALG@tmpcounter=\count510
+\c@ALG@Lnr=\count511
+\c@ALG@blocknr=\count512
+\c@ALG@storecount=\count513
+\c@ALG@tmpcounter=\count514
 \ALG@tmplength=\skip150
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (c:/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks36
-\pgfutil@tempdima=\dimen259
-\pgfutil@tempdimb=\dimen260
+\pgfutil@tempdima=\dimen267
+\pgfutil@tempdimb=\dimen268
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box80
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -794,26 +819,26 @@ Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
  (c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@x=\dimen261
-\pgf@y=\dimen262
-\pgf@xa=\dimen263
-\pgf@ya=\dimen264
-\pgf@xb=\dimen265
-\pgf@yb=\dimen266
-\pgf@xc=\dimen267
-\pgf@yc=\dimen268
-\pgf@xd=\dimen269
-\pgf@yd=\dimen270
+\pgf@x=\dimen269
+\pgf@y=\dimen270
+\pgf@xa=\dimen271
+\pgf@ya=\dimen272
+\pgf@xb=\dimen273
+\pgf@yb=\dimen274
+\pgf@xc=\dimen275
+\pgf@yc=\dimen276
+\pgf@xd=\dimen277
+\pgf@yd=\dimen278
 \w@pgf@writea=\write5
 \r@pgf@reada=\read4
-\c@pgf@counta=\count511
-\c@pgf@countb=\count512
-\c@pgf@countc=\count513
-\c@pgf@countd=\count514
+\c@pgf@counta=\count515
+\c@pgf@countb=\count516
+\c@pgf@countc=\count517
+\c@pgf@countd=\count518
 \t@pgf@toka=\toks37
 \t@pgf@tokb=\toks38
 \t@pgf@tokc=\toks39
-\pgf@sys@id@count=\count515
+\pgf@sys@id@count=\count519
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
@@ -824,59 +849,59 @@ File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 ))) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count516
-\pgfsyssoftpath@bigbuffer@items=\count517
+\pgfsyssoftpath@smallbuffer@items=\count520
+\pgfsyssoftpath@bigbuffer@items=\count521
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen271
-\pgfmath@count=\count518
+\pgfmath@dimen=\dimen279
+\pgfmath@count=\count522
 \pgfmath@box=\box81
 \pgfmath@toks=\toks40
 \pgfmath@stack@operand=\toks41
 \pgfmath@stack@operation=\toks42
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count519
+\c@pgfmathroundto@lastzeros=\count523
 )) (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@picminx=\dimen272
-\pgf@picmaxx=\dimen273
-\pgf@picminy=\dimen274
-\pgf@picmaxy=\dimen275
-\pgf@pathminx=\dimen276
-\pgf@pathmaxx=\dimen277
-\pgf@pathminy=\dimen278
-\pgf@pathmaxy=\dimen279
-\pgf@xx=\dimen280
-\pgf@xy=\dimen281
-\pgf@yx=\dimen282
-\pgf@yy=\dimen283
-\pgf@zx=\dimen284
-\pgf@zy=\dimen285
+\pgf@picminx=\dimen280
+\pgf@picmaxx=\dimen281
+\pgf@picminy=\dimen282
+\pgf@picmaxy=\dimen283
+\pgf@pathminx=\dimen284
+\pgf@pathmaxx=\dimen285
+\pgf@pathminy=\dimen286
+\pgf@pathmaxy=\dimen287
+\pgf@xx=\dimen288
+\pgf@xy=\dimen289
+\pgf@yx=\dimen290
+\pgf@yy=\dimen291
+\pgf@zx=\dimen292
+\pgf@zy=\dimen293
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@path@lastx=\dimen286
-\pgf@path@lasty=\dimen287
+\pgf@path@lastx=\dimen294
+\pgf@path@lasty=\dimen295
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@shorten@end@additional=\dimen288
-\pgf@shorten@start@additional=\dimen289
+\pgf@shorten@end@additional=\dimen296
+\pgf@shorten@start@additional=\dimen297
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box82
 \pgf@hbox=\box83
 \pgf@layerbox@main=\box84
-\pgf@picture@serial@count=\count520
+\pgf@picture@serial@count=\count524
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgflinewidth=\dimen290
+\pgflinewidth=\dimen298
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@pt@x=\dimen291
-\pgf@pt@y=\dimen292
-\pgf@pt@temp=\dimen293
+\pgf@pt@x=\dimen299
+\pgf@pt@y=\dimen300
+\pgf@pt@temp=\dimen301
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -885,12 +910,12 @@ File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowsep=\dimen294
+\pgfarrowsep=\dimen302
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@max=\dimen295
-\pgf@sys@shading@range@num=\count521
-\pgf@shadingcount=\count522
+\pgf@max=\dimen303
+\pgf@sys@shading@range@num=\count525
+\pgf@shadingcount=\count526
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -911,46 +936,46 @@ File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (c:/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@nodesepstart=\dimen296
-\pgf@nodesepend=\dimen297
+\pgf@nodesepstart=\dimen304
+\pgf@nodesepend=\dimen305
 ) (c:/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 )) (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
-\pgffor@iter=\dimen298
-\pgffor@skip=\dimen299
+\pgffor@iter=\dimen306
+\pgffor@skip=\dimen307
 \pgffor@stack=\toks43
 \pgffor@toks=\toks44
 )) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count523
-\pgfplotmarksize=\dimen300
+\pgf@plot@mark@count=\count527
+\pgfplotmarksize=\dimen308
 )
-\tikz@lastx=\dimen301
-\tikz@lasty=\dimen302
-\tikz@lastxsaved=\dimen303
-\tikz@lastysaved=\dimen304
-\tikz@lastmovetox=\dimen305
-\tikz@lastmovetoy=\dimen306
-\tikzleveldistance=\dimen307
-\tikzsiblingdistance=\dimen308
+\tikz@lastx=\dimen309
+\tikz@lasty=\dimen310
+\tikz@lastxsaved=\dimen311
+\tikz@lastysaved=\dimen312
+\tikz@lastmovetox=\dimen313
+\tikz@lastmovetoy=\dimen314
+\tikzleveldistance=\dimen315
+\tikzsiblingdistance=\dimen316
 \tikz@figbox=\box87
 \tikz@figbox@bg=\box88
 \tikz@tempbox=\box89
 \tikz@tempbox@bg=\box90
-\tikztreelevel=\count524
-\tikznumberofchildren=\count525
-\tikznumberofcurrentchild=\count526
-\tikz@fig@count=\count527
+\tikztreelevel=\count528
+\tikznumberofchildren=\count529
+\tikznumberofcurrentchild=\count530
+\tikz@fig@count=\count531
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count528
-\pgfmatrixcurrentcolumn=\count529
-\pgf@matrix@numberofcolumns=\count530
+\pgfmatrixcurrentrow=\count532
+\pgfmatrixcurrentcolumn=\count533
+\pgf@matrix@numberofcolumns=\count534
 )
-\tikz@expandcount=\count531
+\tikz@expandcount=\count535
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))) (c:/texlive/2025/texmf-dist/tex/latex/tikzmark/tikzlibrarytikzmark.code.tex
@@ -958,19 +983,19 @@ File: tikzlibrarytikzmark.code.tex 2022/08/24 v1.15 TikZ library for marking pos
  (c:/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 )
-\l__sn_x_dim=\dimen309
-\l__sn_y_dim=\dimen310
-\l__sn_xa_dim=\dimen311
-\l__sn_ya_dim=\dimen312
+\l__sn_x_dim=\dimen317
+\l__sn_y_dim=\dimen318
+\l__sn_xa_dim=\dimen319
+\l__sn_ya_dim=\dimen320
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowinset=\dimen313
-\pgfarrowlength=\dimen314
-\pgfarrowwidth=\dimen315
-\pgfarrowlinewidth=\dimen316
+\pgfarrowinset=\dimen321
+\pgfarrowlength=\dimen322
+\pgfarrowwidth=\dimen323
+\pgfarrowlinewidth=\dimen324
 ))
-\@quotelevel=\count532
-\@quotereset=\count533
+\@quotelevel=\count536
+\@quotereset=\count537
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 4.
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 4.
  (c:/texlive/2025/texmf-dist/tex/latex/psnfss/t1ptm.fd
@@ -1033,16 +1058,16 @@ LaTeX Font Info:    ... okay on input line 4.
 
 (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count534
-\scratchdimen=\dimen317
+\scratchcounter=\count538
+\scratchdimen=\dimen325
 \scratchbox=\box91
-\nofMPsegments=\count535
-\nofMParguments=\count536
+\nofMPsegments=\count539
+\nofMParguments=\count540
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count537
-\MPscratchDim=\dimen318
-\MPnumerator=\count538
-\makeMPintoPDFobject=\count539
+\MPscratchCnt=\count541
+\MPscratchDim=\dimen326
+\MPnumerator=\count542
+\makeMPintoPDFobject=\count543
 \everyMPtoPDFconversion=\toks46
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1091,7 +1116,10 @@ Package biblatex Info: Reference segment=0 on input line 4.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 4.
-\c@lstlisting=\count540
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count544
  (./cover.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
@@ -1250,29 +1278,103 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 [7]
 
 [8]
+<images/Convnext model.png, id=199, 181.67876pt x 1085.05376pt>
+File: images/Convnext model.png Graphic file (type png)
+<use images/Convnext model.png>
+Package pdftex.def Info: images/Convnext model.png  used on input line 173.
+(pdftex.def)             Requested size: 107.9103pt x 644.46503pt.
+<images/EfficientNet model.png, id=201, 181.67876pt x 1024.82875pt>
+File: images/EfficientNet model.png Graphic file (type png)
+<use images/EfficientNet model.png>
+Package pdftex.def Info: images/EfficientNet model.png  used on input line 180.
+(pdftex.def)             Requested size: 114.25029pt x 644.46503pt.
+<images/MobileNet model.png, id=202, 182.6825pt x 1024.82875pt>
+File: images/MobileNet model.png Graphic file (type png)
+<use images/MobileNet model.png>
+Package pdftex.def Info: images/MobileNet model.png  used on input line 186.
+(pdftex.def)             Requested size: 114.8815pt x 644.46503pt.
 
-[9]
 
-[10]) (./chapters/evaluation.tex
+[9 <./images/Convnext model.png> <./images/EfficientNet model.png> <./images/MobileNet model.png>]
 
-[11]
+[10
+
+]
+
+[11]) (./chapters/evaluation.tex
+
+[12]
 Chapter 4.
 
 
-[12
+[13
 
 ]
 
-[13]) (./chapters/conclusion.tex
-
 [14]
+<images/Convnext.png, id=246, 443.7378pt x 440.1243pt>
+File: images/Convnext.png Graphic file (type png)
+<use images/Convnext.png>
+Package pdftex.def Info: images/Convnext.png  used on input line 124.
+(pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
+<images/EfficientNet.png, id=247, 443.7378pt x 440.1243pt>
+File: images/EfficientNet.png Graphic file (type png)
+<use images/EfficientNet.png>
+Package pdftex.def Info: images/EfficientNet.png  used on input line 130.
+(pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
+<images/MobileNet.png, id=248, 443.7378pt x 440.1243pt>
+File: images/MobileNet.png Graphic file (type png)
+<use images/MobileNet.png>
+Package pdftex.def Info: images/MobileNet.png  used on input line 138.
+(pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
+<images/Ensemble.png, id=249, 443.7378pt x 440.1243pt>
+File: images/Ensemble.png Graphic file (type png)
+<use images/Ensemble.png>
+Package pdftex.def Info: images/Ensemble.png  used on input line 144.
+(pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
+
+
+[15 <./images/Convnext.png> <./images/EfficientNet.png> <./images/MobileNet.png> <./images/Ensemble.png>]
+<images/Convnext base.png, id=258, 443.7378pt x 440.1243pt>
+File: images/Convnext base.png Graphic file (type png)
+<use images/Convnext base.png>
+Package pdftex.def Info: images/Convnext base.png  used on input line 158.
+(pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
+<images/EfficientNet base.png, id=259, 443.7378pt x 440.1243pt>
+File: images/EfficientNet base.png Graphic file (type png)
+<use images/EfficientNet base.png>
+Package pdftex.def Info: images/EfficientNet base.png  used on input line 164.
+(pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
+<images/MobileNet base.png, id=260, 443.7378pt x 440.1243pt>
+File: images/MobileNet base.png Graphic file (type png)
+<use images/MobileNet base.png>
+Package pdftex.def Info: images/MobileNet base.png  used on input line 172.
+(pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
+
+
+[16 <./images/Convnext base.png> <./images/EfficientNet base.png> <./images/MobileNet base.png>]
+<images/MedGemma.png, id=268, 443.7378pt x 440.1243pt>
+File: images/MedGemma.png Graphic file (type png)
+<use images/MedGemma.png>
+Package pdftex.def Info: images/MedGemma.png  used on input line 192.
+(pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
+<images/LLaVA-Rad.png, id=269, 443.7378pt x 440.1243pt>
+File: images/LLaVA-Rad.png Graphic file (type png)
+<use images/LLaVA-Rad.png>
+Package pdftex.def Info: images/LLaVA-Rad.png  used on input line 198.
+(pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
+
+
+[17 <./images/MedGemma.png> <./images/LLaVA-Rad.png>]) (./chapters/conclusion.tex
+
+[18]
 Chapter 5.
 )
 
-[15
+[19
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20251107014337 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted cleantemp  --timestamp 20251107184800 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
 
  (./main.aux)
  ***********
@@ -1286,18 +1388,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39717 strings out of 467747
- 835518 string characters out of 5431116
- 1842015 words of memory out of 5000000
- 67782 multiletter control sequences out of 15000+600000
+ 41263 strings out of 467747
+ 866538 string characters out of 5431116
+ 1869074 words of memory out of 5000000
+ 69312 multiletter control sequences out of 15000+600000
  671011 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,11n,90p,740b,5052s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (22 pages, 97004 bytes).
+Output written on main.pdf (26 pages, 237296 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 236 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 149 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 330 PDF objects out of 1000 (max. 8388607)
+ 263 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
