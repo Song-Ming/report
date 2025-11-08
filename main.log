@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.14)  7 NOV 2025 18:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.14)  9 NOV 2025 03:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1268,7 +1268,7 @@ Chapter 3.
 [5
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 85.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 86.
  (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
@@ -1365,16 +1365,27 @@ Package pdftex.def Info: images/LLaVA-Rad.png  used on input line 198.
 (pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
 
 
-[17 <./images/MedGemma.png> <./images/LLaVA-Rad.png>]) (./chapters/conclusion.tex
+[17 <./images/MedGemma.png> <./images/LLaVA-Rad.png>]
 
-[18]
+[18]) (./chapters/conclusion.tex
+
+[19]
 Chapter 5.
 )
 
-[19
+[20
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20251107184800 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+
+[21
+
+
+]
+
+[22]
+
+[23]
+runsystem(latexminted cleantemp  --timestamp 20251109033720 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
 
  (./main.aux)
  ***********
@@ -1382,24 +1393,24 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4BFA1522A9A2BD1CDFA682BD620C7A75;1900.
+(rerunfilecheck)             Checksum: 394DAA452AC940DCE5B80BB4FF9F2364;1906.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41263 strings out of 467747
- 866538 string characters out of 5431116
- 1869074 words of memory out of 5000000
- 69312 multiletter control sequences out of 15000+600000
+ 41620 strings out of 467747
+ 875861 string characters out of 5431116
+ 1869861 words of memory out of 5000000
+ 69644 multiletter control sequences out of 15000+600000
  671011 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,11n,90p,740b,5052s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (26 pages, 237296 bytes).
+Output written on main.pdf (30 pages, 260619 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 263 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 329 compressed objects within 4 object streams
+ 86 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -10,10 +10,11 @@ radiographs in either the lateral or anterior posterior view. Each radiograph wa
 to the type of injury present (supracondylar fracture, dislocation, contusion etc). Using this
 information, the data was grouped into either injury or normal. The injury set includes radiographs 
 with untreated fractures and/or dislocations while the normal set consists of all other radiographs. 
-The data was further divided into training, validation, and test sets as shown in Table 3.1.
+The data was further divided into training, validation, and test sets with a 80/10/10 split as shown in 
+Table 3.1.
 
 In addition, the MURA dataset from Stanford Machine Learning Group was used for pretraining the CNN 
-models. This dataset consists of 40561 radiographs of 7 different bodyparts: elbow, finger, forearm, 
+models (Rajpurkar et al., 2017). This dataset consists of 40561 radiographs of 7 different bodyparts: elbow, finger, forearm, 
 hand, humerus, shoulder and wrist. Each image is labelled as either positive (abnormality) or negative 
 (no abnormality). Notably, the criteria for abnormality used in MURA differs from the criteria for injury 
 in the main dataset. For instance, a contusion would be classified as normal in the main dataset but
@@ -23,17 +24,17 @@ validation sets is shown in Table 3.2.
 \begin{table}[h!]
 \parbox{.45\linewidth}{ % [h!] suggests placing the table "here" if possible
     \centering % Centers the table on the page
-    \begin{tabular}{|c|c|c|} % Defines column types and vertical lines
+    \begin{tabular}{|c|c|c|c|} % Defines column types and vertical lines
         \hline % Horizontal line at the top
-        Set & Normal & Injury \\ % Table headers
+        Set & Normal & Injury & All \\ % Table headers
         \hline % Horizontal line below headers
-        Training & 1957 & 1538 \\
+        Training & 1957 & 1538 & 3495\\
         \hline % Horizontal line between rows
-        Validation & 244 & 193 \\
+        Validation & 251 & 186 & 437 \\
         \hline % Horizontal line between rows
-        Test & 186 & 251 \\
+        Test & 244 & 193 & 437 \\
         \hline % Horizontal line between rows
-        Total & 2387 & 1982 \\
+        Total & 2452 & 1917 & 4369 \\
         \hline % Horizontal line at the bottom
     \end{tabular}
     \caption{Training Set} % Table caption
@@ -41,15 +42,15 @@ validation sets is shown in Table 3.2.
 }
 \parbox{.45\linewidth}{
     \centering % Centers the table on the page
-    \begin{tabular}{|c|c|c|} % Defines column types and vertical lines
+    \begin{tabular}{|c|c|c|c|} % Defines column types and vertical lines
         \hline % Horizontal line at the top
-        Set & Normal & Injury \\ % Table headers
+        Set & Normal & Injury & All \\ % Table headers
         \hline % Horizontal line below headers
-        Training & 21935 & 14870 \\
+        Training & 21935 & 14870 & 36805 \\
         \hline % Horizontal line between rows
-        Validation & 1533 & 1667 \\
+        Validation & 1533 & 1667 & 3200\\
         \hline % Horizontal line between rows
-        Total & 23468 & 16537 \\
+        Total & 23468 & 16537 & 40005 \\
         \hline % Horizontal line at the bottom
     \end{tabular}
     \caption{Pretraining Set} % Table caption
@@ -71,7 +72,7 @@ to the requirements for each model.
 
 Next, the radiographs underwent Contrast Limited Adaptive Histogram Equalisation (CLAHE) using OpenCV. Adaptive Histogram 
 Equalisation is an image processing technique which calculates histograms of the pixel intensities in different parts of an 
-image. The pixel intensities are then redistributed using the histograms to improve the contrast of the image. 
+image. The pixel intensities are then redistributed using the histograms to improve the contrast of the image (Reza, 2004). 
 The implementation in OpenCV splits the image into a non overlapping grid and applies the technique subject to
 a clip limit which limits the amount of redistribution to reduce noise. The specific settings used were a clip 
 limit of 2.5 and a grid size of 4.
@@ -89,8 +90,7 @@ Each image in the training set was augmented twice for the target dataset and on
 10485 images and 73610 images respectively. Brightness and contrast transformations are also commonly used in image augmentation
 but were found to negatively impact performance and were thus excluded.
 
-(insert examples of images)
-
+% include examples?
 \end{flushleft}
 \pagebreak
 
@@ -136,7 +136,7 @@ The framework used for the CNN models is outlined below.
   \pagebreak
   \item 3. Convolutional Block Attention Module \linebreak
   Convolutional Block Attention Module (CBAM) is an attention mechanism for CNN models which can be
-  incorporated into an existing architecture and trained together with the rest of the model. CBAM
+  incorporated into an existing architecture and trained together with the rest of the model (Woo et al., 2018). CBAM
   takes in an intermediate feature map and infers a channel attention map and a spatial attention 
   map. The intermediate feature map is then refined using element wise multiplication with the 2 
   attention maps. CBAM has been shown to improve the performance of CNNs on different computer vision 
@@ -203,7 +203,7 @@ The framework used for the CNN models is outlined below.
 \begin{flushleft}
 As mentioned previously, ImageNet is a dataset of natural objects and is very different from the 
 greyscale radiographs in our target dataset. Hence, it is not an ideal source of transfer learning as
-the features learnt from imagenet may not be useful. To address this issue, the MURA dataset was
+the features learnt from ImageNet may not be useful. To address this issue, the MURA dataset was
 used for a pretraining step before training on the target dataset.
 
 For pretraining, the Stochastic Gradient Descent (SGD) optimiser was used together with a cosine annealing 
@@ -248,11 +248,11 @@ been specifically trained on medical datasets for use in tasks such as medical r
 are MedGemma 4B and LLava-Rad due to their high performance and relatively small size.
 
 MedGemma is a collection of 2 publicly available foundation models created by google and trained for a wide range of medical related tasks 
-such as radiology report generation and diagnosis. MedGemma is based on the Gemma 3 VLM and includes a 4 billion parameter and 27 billion 
-parameter variant. Both variants use the SigLIP image encoder and have been trained on a large variety of medical data such as chest 
+such as radiology report generation and diagnosis (Sellergren et al., 2025). MedGemma is based on the Gemma 3 VLM and has a 4 billion parameter and 27 billion 
+parameter variant. Both use the SigLIP image encoder and have been trained on a large variety of medical data such as chest 
 X-rays, histopathology slides and medical question answer pairs. LLaVA-Rad is another publicly available foundation model created by Microsoft 
-and is focused on analysing chest X-rays and generating medical reports. LLaVA-Rad uses the BiomedCLIP image encoder and the Vicuna LLM and is 
-trained on a large dataset of chest X-rays with corresponding radiology reports. 
+and focused on analysing chest X-rays and generating reports (Zambrano Chaves et al., 2025). LLaVA-Rad uses the BiomedCLIP image encoder and the Vicuna LLM and is 
+trained on a large dataset of chest X-rays with radiology reports. 
 \end{flushleft}
 
 \pagebreak
@@ -262,7 +262,7 @@ trained on a large dataset of chest X-rays with corresponding radiology reports.
 \begin{flushleft}
 Finetuning the weights of an entire VLM is extremely computationally and memory intensive due to the large size of the model. Hence, a 
 technique called Low Rank Adaptation (LoRA) was used instead. LoRA is a technique used to finetune pretrained models which involves freezing 
-the weights of the model and injecting lower rank matrices into the targeted parts of the model. During training, only these matrices are
+the weights of the model and injecting lower rank matrices into the targeted parts of the model (Hu et al., 2021). During training, only these matrices are
 optimised instead of the original weights which greatly decreases the memory and time required. The matrices can then be merged with
 the original weights during inference to generate the desired output without increasing inference time.
 
