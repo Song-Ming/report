@@ -213,18 +213,21 @@ pretraining on the MURA dataset helped to reduce the mismatch issue between Imag
 block attention modules also improved the ability of the models to focus on relevant parts of the image thus improving performance. The improvement
 was larger for Convnext and EfficientNet than MobileNet which may be due to the larger size of the first 2 models. 
 
+In Alzubaidi et al., pretraining yielded improvements of between 2\% and 9\% accuracy over using just ImageNet which is much larger than the
+improvement seen here. This may be because of differences in the target dataset. In Alzubaidi et al, the target dataset was the subset of humerus X-rays
+in MURA which comes from the same source as the rest of the dataset. In contrast, the elbow X-rays used here come from a different source and have different 
+characteristics from the X-rays in the MURA dataset which reduces the impact of the pretraining step. A possible solution could be to supplement the pretraining 
+set with additional X-rays from other publicly avaiable online sources as well as from local healthcare institutions
+
 The ensemble model had a 0.4\% increase in accuracy and 0.002 increase in AUROC compared to Convnext which is the best performing individual model. 
 This is a relatively small difference in performance. However, the ensemble model had a higher recall than all 3 of the individual models with 2.1\% 
 higher recall than Convnext, 7.3\% higher recall than EfficientNet and 1.1\% higher recall than MobileNet. The model also had a higher precision than
 EfficientNet and MobileNet although it had a 0.8\% lower precision than Convnext.
 
-In Alzubaidi et al., pretraining yielded improvements of between 2\% and 9\% accuracy over using just ImageNet which is much larger than the
-improvement seen here. This may be because of differences in the target dataset. In Alzubaidi et al, the target dataset was the subset of humerus X-rays
-in MURA which comes from the same source as the rest of the dataset. In contrast, the elbow X-rays used here come from a different source and have different 
-characteristics from the X-rays in the MURA dataset which reduces the impact of the pretraining step. In Alzubaidi et al. and Tahir et al., the ensemble model 
-showed an improvement of over 20\% and 2\% accuracy respectively over the best performing individual model. This is much larger than the improvement seen in our 
-ensemble model. The small improvement suggests that the features collected from the 3 individual models may be too similar to each other resulting in a smaller benefit 
-from the feature fusion.
+The ensemble models in Alzubaidi et al. and Tahir et al. showed an improvement of over 20\% and 2\% accuracy respectively over their best performing individual model. 
+This is much larger than the improvement seen in our ensemble model. The comparatively small improvement suggests that the features collected from the 3 individual models 
+may be too similar to each other resulting in a smaller benefit from the feature fusion. This might be mitigated by using a larger number of smaller CNN models or by
+training each model on a slightly different subset of the training data.
 
 For the VLM models, MedGemma generally had a worse performance than any of the individual CNN models, only beating EfficientNet without pretraining. 
 In contrast, LLaVA-Rad had a better accuracy and F1 score than EfficientNet and MobileNet, only losing to ConvNeXt and the Ensemble model. In addition, 
@@ -236,16 +239,9 @@ the time of the radiologist which is a less serious problem. Hence, a high recal
 standpoint, the Ensemble was the best model followed by LLaVA-Rad. In addition because of the computational requirements, the VLMs were not 
 pretrained on the MURA dataset which might have increased their performance significantly. Hence, although the performance of the VLMs are not the 
 best, LLaVA-Rad in particular shows potential for further development.
+
+% Try using gradcam and LVLM-Interpret for visualisation
+% Talk about more complex tasks (type of fracture) which VLM may be better at than CNN?
 \end{flushleft}
 
-\section{Future Work}
-\label{sec:Future Work}
-
-\begin{flushleft}
-placeholder
-- Continue to work with VLMs
-- Collect more data from local sources for pretraining instead of mura
-- Try different ensemble techniques, use larger number of smaller models
-- Try using gradcam and LVLM-Interpret for visualisation
-\end{flushleft}
 
