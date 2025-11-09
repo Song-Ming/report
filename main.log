@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.14)  9 NOV 2025 03:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.14)  9 NOV 2025 20:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1312,56 +1312,56 @@ Chapter 4.
 ]
 
 [14]
-<images/Convnext.png, id=246, 443.7378pt x 440.1243pt>
+<images/Convnext.png, id=245, 443.7378pt x 440.1243pt>
 File: images/Convnext.png Graphic file (type png)
 <use images/Convnext.png>
-Package pdftex.def Info: images/Convnext.png  used on input line 124.
+Package pdftex.def Info: images/Convnext.png  used on input line 120.
 (pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
-<images/EfficientNet.png, id=247, 443.7378pt x 440.1243pt>
+<images/EfficientNet.png, id=246, 443.7378pt x 440.1243pt>
 File: images/EfficientNet.png Graphic file (type png)
 <use images/EfficientNet.png>
-Package pdftex.def Info: images/EfficientNet.png  used on input line 130.
+Package pdftex.def Info: images/EfficientNet.png  used on input line 126.
 (pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
-<images/MobileNet.png, id=248, 443.7378pt x 440.1243pt>
+<images/MobileNet.png, id=247, 443.7378pt x 440.1243pt>
 File: images/MobileNet.png Graphic file (type png)
 <use images/MobileNet.png>
-Package pdftex.def Info: images/MobileNet.png  used on input line 138.
+Package pdftex.def Info: images/MobileNet.png  used on input line 134.
 (pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
-<images/Ensemble.png, id=249, 443.7378pt x 440.1243pt>
+<images/Ensemble.png, id=248, 443.7378pt x 440.1243pt>
 File: images/Ensemble.png Graphic file (type png)
 <use images/Ensemble.png>
-Package pdftex.def Info: images/Ensemble.png  used on input line 144.
+Package pdftex.def Info: images/Ensemble.png  used on input line 140.
 (pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
 
 
 [15 <./images/Convnext.png> <./images/EfficientNet.png> <./images/MobileNet.png> <./images/Ensemble.png>]
-<images/Convnext base.png, id=258, 443.7378pt x 440.1243pt>
+<images/Convnext base.png, id=257, 443.7378pt x 440.1243pt>
 File: images/Convnext base.png Graphic file (type png)
 <use images/Convnext base.png>
-Package pdftex.def Info: images/Convnext base.png  used on input line 158.
+Package pdftex.def Info: images/Convnext base.png  used on input line 154.
 (pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
-<images/EfficientNet base.png, id=259, 443.7378pt x 440.1243pt>
+<images/EfficientNet base.png, id=258, 443.7378pt x 440.1243pt>
 File: images/EfficientNet base.png Graphic file (type png)
 <use images/EfficientNet base.png>
-Package pdftex.def Info: images/EfficientNet base.png  used on input line 164.
+Package pdftex.def Info: images/EfficientNet base.png  used on input line 160.
 (pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
-<images/MobileNet base.png, id=260, 443.7378pt x 440.1243pt>
+<images/MobileNet base.png, id=259, 443.7378pt x 440.1243pt>
 File: images/MobileNet base.png Graphic file (type png)
 <use images/MobileNet base.png>
-Package pdftex.def Info: images/MobileNet base.png  used on input line 172.
+Package pdftex.def Info: images/MobileNet base.png  used on input line 168.
 (pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
 
 
 [16 <./images/Convnext base.png> <./images/EfficientNet base.png> <./images/MobileNet base.png>]
-<images/MedGemma.png, id=268, 443.7378pt x 440.1243pt>
+<images/MedGemma.png, id=267, 443.7378pt x 440.1243pt>
 File: images/MedGemma.png Graphic file (type png)
 <use images/MedGemma.png>
-Package pdftex.def Info: images/MedGemma.png  used on input line 192.
+Package pdftex.def Info: images/MedGemma.png  used on input line 188.
 (pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
-<images/LLaVA-Rad.png, id=269, 443.7378pt x 440.1243pt>
+<images/LLaVA-Rad.png, id=268, 443.7378pt x 440.1243pt>
 File: images/LLaVA-Rad.png Graphic file (type png)
 <use images/LLaVA-Rad.png>
-Package pdftex.def Info: images/LLaVA-Rad.png  used on input line 198.
+Package pdftex.def Info: images/LLaVA-Rad.png  used on input line 194.
 (pdftex.def)             Requested size: 203.83417pt x 202.17085pt.
 
 
@@ -1385,7 +1385,7 @@ Chapter 5.
 [22]
 
 [23]
-runsystem(latexminted cleantemp  --timestamp 20251109033720 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted cleantemp  --timestamp 20251109205722 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
 
  (./main.aux)
  ***********
@@ -1399,18 +1399,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41620 strings out of 467747
- 875861 string characters out of 5431116
- 1869861 words of memory out of 5000000
- 69644 multiletter control sequences out of 15000+600000
+ 41637 strings out of 467747
+ 876502 string characters out of 5431116
+ 1869979 words of memory out of 5000000
+ 69659 multiletter control sequences out of 15000+600000
  671011 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,11n,90p,740b,5052s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (30 pages, 260619 bytes).
+Output written on main.pdf (30 pages, 261306 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 329 compressed objects within 4 object streams
- 86 named destinations out of 1000 (max. 500000)
+ 408 PDF objects out of 1000 (max. 8388607)
+ 336 compressed objects within 4 object streams
+ 88 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 

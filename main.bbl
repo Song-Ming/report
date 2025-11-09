@@ -338,6 +338,91 @@
       \verb https://pmc.ncbi.nlm.nih.gov/articles/PMC10927121/#sec002
       \endverb
     \endentry
+    \entry{Awais2025}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=153ca60a5ef5a1c7998037a1c28994c2}{%
+           family={Awais},
+           familyi={A\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9cc40cd0f636fbdb2e988696bd6ad395}{%
+           family={Naseer},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13d13b7dcfe57b1229ff1035a86ef3a9}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d1e465634ca8042c3c6aebdfd3dcac75}{%
+           family={Anwer},
+           familyi={A\bibinitperiod},
+           given={R\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1c6ab4a4d354d7c3f8d4c29fd297894}{%
+           family={Cholakkal},
+           familyi={C\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8a5337aa7ea1a9dc4d26c4699b3f01e}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed26760ba71872ce6cb27de4a818e5b4}{%
+           family={Y},
+           familyi={Y\bibinitperiod},
+           given={M-H.},
+           giveni={M\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4bae6db28eb4ddaccd6023ee3494636}{%
+           family={K},
+           familyi={K\bibinitperiod},
+           given={F\bibnamedelima S.},
+           giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3c6ff709323b2fcbf86beb28bc0a8c43}
+      \strng{fullhash}{53b6b7da1d701067415f81a69f2debbe}
+      \strng{fullhashraw}{53b6b7da1d701067415f81a69f2debbe}
+      \strng{bibnamehash}{53b6b7da1d701067415f81a69f2debbe}
+      \strng{authorbibnamehash}{53b6b7da1d701067415f81a69f2debbe}
+      \strng{authornamehash}{3c6ff709323b2fcbf86beb28bc0a8c43}
+      \strng{authorfullhash}{53b6b7da1d701067415f81a69f2debbe}
+      \strng{authorfullhashraw}{53b6b7da1d701067415f81a69f2debbe}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{4}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{month}{01}
+      \field{title}{Foundational Models Defining a New Era in Vision: A Survey and Outlook}
+      \field{volume}{47}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{2245\bibrangedash 2264}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2024.3506283
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10834497
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10834497
+      \endverb
+    \endentry
     \entry{Hu2021}{article}{}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=00c379a13ab5fa32555b12155f442c54}{%
@@ -463,7 +548,7 @@
       \field{issue}{5}
       \field{journaltitle}{American Journal of Roentgenology}
       \field{month}{11}
-      \field{title}{Pediatric Bone Imaging: Imaging Elbow Trauma in Children???A Review of Acute and Chronic Injuries}
+      \field{title}{Pediatric Bone Imaging: Imaging Elbow Trauma in Children—A Review of Acute and Chronic Injuries}
       \field{volume}{198}
       \field{year}{2012}
       \true{nocite}
@@ -840,10 +925,10 @@
       \verb 10.3390/math10183291
       \endverb
       \verb{urlraw}
-      \verb https://ieeexplore.ieee.org/document/10847310
+      \verb https://www.mdpi.com/2227-7390/10/18/3291
       \endverb
       \verb{url}
-      \verb https://ieeexplore.ieee.org/document/10847310
+      \verb https://www.mdpi.com/2227-7390/10/18/3291
       \endverb
     \endentry
     \entry{MCGINLEY2006560}{article}{}{}
@@ -904,6 +989,78 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/S0735675706000258
+      \endverb
+    \endentry
+    \entry{Raiann2024}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=8a3777073ad6f78976235f8ed0ca6332}{%
+           family={Raiaan},
+           familyi={R\bibinitperiod},
+           given={M\bibnamedelima A\bibnamedelima K.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67befb9e74f61b74abad66b5198c722c}{%
+           family={Mukta},
+           familyi={M\bibinitperiod},
+           given={S\bibnamedelima H.},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46814d9984290b0ed5499bbf9ab221da}{%
+           family={Fatema},
+           familyi={F\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb8c0554efa14c0462423e11b53d2e37}{%
+           family={Fahad},
+           familyi={F\bibinitperiod},
+           given={N\bibnamedelima M.},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=730ce68b5a63ba105d2e3b4c3230d14d}{%
+           family={Sakib},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7913b381d70cd2c7685c54a8c117481}{%
+           family={Mim},
+           familyi={M\bibinitperiod},
+           given={M\bibnamedelima M\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f5100b4da10dce49919ffed6b4c50cf7}
+      \strng{fullhash}{94d395db47dca7ec9d68ab28d98059db}
+      \strng{fullhashraw}{94d395db47dca7ec9d68ab28d98059db}
+      \strng{bibnamehash}{94d395db47dca7ec9d68ab28d98059db}
+      \strng{authorbibnamehash}{94d395db47dca7ec9d68ab28d98059db}
+      \strng{authornamehash}{f5100b4da10dce49919ffed6b4c50cf7}
+      \strng{authorfullhash}{94d395db47dca7ec9d68ab28d98059db}
+      \strng{authorfullhashraw}{94d395db47dca7ec9d68ab28d98059db}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{month}{02}
+      \field{title}{A Review on Large Language Models: Architectures, Applications, Taxonomies, Open Issues and Challenges}
+      \field{volume}{12}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{26839\bibrangedash 26874}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2024.3365742
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10433480
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10433480
       \endverb
     \endentry
     \entry{Rajpurkar2017}{article}{}{}
@@ -1772,6 +1929,67 @@
       \endverb
       \verb{url}
       \verb https://www.nature.com/articles/s41467-025-58344-x#citeas
+      \endverb
+    \endentry
+    \entry{Zhang2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=8afab9bdc9b292debbeb136dfd97036c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01857aa236d9261867a4ccbd55bd157a}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3a3d9f1108a9d71803c958f19d2a096}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ef50857e114f08907fb07cb579b5e7e}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{20caff317817169cad5ad44a90ac50b4}
+      \strng{fullhash}{5ac322e5e38ceb9ee836c5ab3f7805f5}
+      \strng{fullhashraw}{5ac322e5e38ceb9ee836c5ab3f7805f5}
+      \strng{bibnamehash}{5ac322e5e38ceb9ee836c5ab3f7805f5}
+      \strng{authorbibnamehash}{5ac322e5e38ceb9ee836c5ab3f7805f5}
+      \strng{authornamehash}{20caff317817169cad5ad44a90ac50b4}
+      \strng{authorfullhash}{5ac322e5e38ceb9ee836c5ab3f7805f5}
+      \strng{authorfullhashraw}{5ac322e5e38ceb9ee836c5ab3f7805f5}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{8}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{month}{02}
+      \field{title}{Vision-Language Models for Vision Tasks: A Survey}
+      \field{volume}{46}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{5625\bibrangedash 5644}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2024.3369699
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10445007
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10445007
       \endverb
     \endentry
   \enddatalist
@@ -2095,6 +2313,91 @@
       \verb https://pmc.ncbi.nlm.nih.gov/articles/PMC10927121/#sec002
       \endverb
     \endentry
+    \entry{Awais2025}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=153ca60a5ef5a1c7998037a1c28994c2}{%
+           family={Awais},
+           familyi={A\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9cc40cd0f636fbdb2e988696bd6ad395}{%
+           family={Naseer},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13d13b7dcfe57b1229ff1035a86ef3a9}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d1e465634ca8042c3c6aebdfd3dcac75}{%
+           family={Anwer},
+           familyi={A\bibinitperiod},
+           given={R\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1c6ab4a4d354d7c3f8d4c29fd297894}{%
+           family={Cholakkal},
+           familyi={C\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8a5337aa7ea1a9dc4d26c4699b3f01e}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed26760ba71872ce6cb27de4a818e5b4}{%
+           family={Y},
+           familyi={Y\bibinitperiod},
+           given={M-H.},
+           giveni={M\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4bae6db28eb4ddaccd6023ee3494636}{%
+           family={K},
+           familyi={K\bibinitperiod},
+           given={F\bibnamedelima S.},
+           giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3c6ff709323b2fcbf86beb28bc0a8c43}
+      \strng{fullhash}{53b6b7da1d701067415f81a69f2debbe}
+      \strng{fullhashraw}{53b6b7da1d701067415f81a69f2debbe}
+      \strng{bibnamehash}{53b6b7da1d701067415f81a69f2debbe}
+      \strng{authorbibnamehash}{53b6b7da1d701067415f81a69f2debbe}
+      \strng{authornamehash}{3c6ff709323b2fcbf86beb28bc0a8c43}
+      \strng{authorfullhash}{53b6b7da1d701067415f81a69f2debbe}
+      \strng{authorfullhashraw}{53b6b7da1d701067415f81a69f2debbe}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{4}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{month}{01}
+      \field{title}{Foundational Models Defining a New Era in Vision: A Survey and Outlook}
+      \field{volume}{47}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{2245\bibrangedash 2264}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2024.3506283
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10834497
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10834497
+      \endverb
+    \endentry
     \entry{Hu2021}{article}{}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=00c379a13ab5fa32555b12155f442c54}{%
@@ -2220,7 +2523,7 @@
       \field{issue}{5}
       \field{journaltitle}{American Journal of Roentgenology}
       \field{month}{11}
-      \field{title}{Pediatric Bone Imaging: Imaging Elbow Trauma in Children???A Review of Acute and Chronic Injuries}
+      \field{title}{Pediatric Bone Imaging: Imaging Elbow Trauma in Children—A Review of Acute and Chronic Injuries}
       \field{volume}{198}
       \field{year}{2012}
       \true{nocite}
@@ -2597,10 +2900,10 @@
       \verb 10.3390/math10183291
       \endverb
       \verb{urlraw}
-      \verb https://ieeexplore.ieee.org/document/10847310
+      \verb https://www.mdpi.com/2227-7390/10/18/3291
       \endverb
       \verb{url}
-      \verb https://ieeexplore.ieee.org/document/10847310
+      \verb https://www.mdpi.com/2227-7390/10/18/3291
       \endverb
     \endentry
     \entry{MCGINLEY2006560}{article}{}{}
@@ -2661,6 +2964,78 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/S0735675706000258
+      \endverb
+    \endentry
+    \entry{Raiann2024}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=8a3777073ad6f78976235f8ed0ca6332}{%
+           family={Raiaan},
+           familyi={R\bibinitperiod},
+           given={M\bibnamedelima A\bibnamedelima K.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67befb9e74f61b74abad66b5198c722c}{%
+           family={Mukta},
+           familyi={M\bibinitperiod},
+           given={S\bibnamedelima H.},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46814d9984290b0ed5499bbf9ab221da}{%
+           family={Fatema},
+           familyi={F\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb8c0554efa14c0462423e11b53d2e37}{%
+           family={Fahad},
+           familyi={F\bibinitperiod},
+           given={N\bibnamedelima M.},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=730ce68b5a63ba105d2e3b4c3230d14d}{%
+           family={Sakib},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7913b381d70cd2c7685c54a8c117481}{%
+           family={Mim},
+           familyi={M\bibinitperiod},
+           given={M\bibnamedelima M\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f5100b4da10dce49919ffed6b4c50cf7}
+      \strng{fullhash}{94d395db47dca7ec9d68ab28d98059db}
+      \strng{fullhashraw}{94d395db47dca7ec9d68ab28d98059db}
+      \strng{bibnamehash}{94d395db47dca7ec9d68ab28d98059db}
+      \strng{authorbibnamehash}{94d395db47dca7ec9d68ab28d98059db}
+      \strng{authornamehash}{f5100b4da10dce49919ffed6b4c50cf7}
+      \strng{authorfullhash}{94d395db47dca7ec9d68ab28d98059db}
+      \strng{authorfullhashraw}{94d395db47dca7ec9d68ab28d98059db}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{month}{02}
+      \field{title}{A Review on Large Language Models: Architectures, Applications, Taxonomies, Open Issues and Challenges}
+      \field{volume}{12}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{26839\bibrangedash 26874}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2024.3365742
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10433480
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10433480
       \endverb
     \endentry
     \entry{Rajpurkar2017}{article}{}{}
@@ -3529,6 +3904,67 @@
       \endverb
       \verb{url}
       \verb https://www.nature.com/articles/s41467-025-58344-x#citeas
+      \endverb
+    \endentry
+    \entry{Zhang2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=8afab9bdc9b292debbeb136dfd97036c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01857aa236d9261867a4ccbd55bd157a}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3a3d9f1108a9d71803c958f19d2a096}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ef50857e114f08907fb07cb579b5e7e}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{20caff317817169cad5ad44a90ac50b4}
+      \strng{fullhash}{5ac322e5e38ceb9ee836c5ab3f7805f5}
+      \strng{fullhashraw}{5ac322e5e38ceb9ee836c5ab3f7805f5}
+      \strng{bibnamehash}{5ac322e5e38ceb9ee836c5ab3f7805f5}
+      \strng{authorbibnamehash}{5ac322e5e38ceb9ee836c5ab3f7805f5}
+      \strng{authornamehash}{20caff317817169cad5ad44a90ac50b4}
+      \strng{authorfullhash}{5ac322e5e38ceb9ee836c5ab3f7805f5}
+      \strng{authorfullhashraw}{5ac322e5e38ceb9ee836c5ab3f7805f5}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{8}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{month}{02}
+      \field{title}{Vision-Language Models for Vision Tasks: A Survey}
+      \field{volume}{46}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{5625\bibrangedash 5644}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2024.3369699
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10445007
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10445007
       \endverb
     \endentry
   \enddatalist
