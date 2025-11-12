@@ -1,6 +1,15 @@
 \begin{abstract}
 \noindent % Prevents indenting at the start of the paragraph
-placeholder
-
+Elbow fractures are a common type of bone fracture among children, and can lead to serious complications if 
+not quickly diagnosed and treated. Deep learning models such as convolutional neural networks have proven effective 
+at detecting elbow fractures, matching the performance of trained radiologists. However, the performance of these models is 
+hampered by a lack of training data. In this project, we developed a framework to train attention based CNN models to detect elbow fractures. 
+The framework was tested with 3 CNNs: ConvNeXt, EfficientNetV2 and MobileNetV3. In addition, we finetuned 2 medical vision language models, MedGemma and 
+LLaVA-Rad, and evaluated their performance against the CNNs. The CNN models used were modified with the addition of convolutional block attention modules and 
+pretrained on the MURA dataset before training on the target dataset. Subsequently, feature fusion was used to train an ensemble model. The vision language models 
+were finetuned on the same training dataset using Low Rank Adaptation. The attention based CNN models showed a significant improvement over the original models,
+ranging from 1.5\% to 3.1\% improvement in accuracy while the ensemble model achieved the highest recall of 94.3\% and second highest precision of 91.9\%. Medgemma had 
+poor performance with an accuracy of only 88.1\%, below that of the attention based CNN models. However LLaVA-Rad had an accuracy of 91.5\% which surpassed 
+2 of the CNN models and had a high recall of 93.8\%, demonstrating high potential for further work.
 \end{abstract}
 \pagebreak

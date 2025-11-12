@@ -88,8 +88,8 @@ MobileNet achieved an accuracy of 89.2\%, precision of 86.1\%, recall of 90.2\%,
         MobileNet & 0.892 & 0.861 & 0.902 & 0.881 & 0.935 \\
         \hline % Horizontal line at the bottom
     \end{tabular}
-    \caption{CNN results Without pretraining} % Table caption
-    \label{tab:CNN results Without pretraining} % Label for referencing the table
+    \caption{CNN results without pretraining and attention} % Table caption
+    \label{tab:CNN results without pretraining and attention} % Label for referencing the table
 \end{table}
 
 For MedGemma and LLaVA-Rad, the predictions are obtained from the generated text output and does not have a 
@@ -176,8 +176,8 @@ precision of 86.2\%, recall of 87.0\% and F1 score of 86.6\%. LLaVA-Rad achieved
     %     \label{fig:image4}
     % \end{subfigure}
 
-    \caption{Confusion matrices for CNN models without pretraining}
-    \label{fig:Confusion matrices for CNN models without pretraining}
+    \caption{Confusion matrices for CNN models without pretraining and attention}
+    \label{fig:Confusion matrices for CNN models without pretraining and attention}
 \end{figure}
 
 \pagebreak
@@ -240,9 +240,6 @@ the time of the radiologist which is a less serious problem. Hence, a high recal
 standpoint, the Ensemble was the best model followed by LLaVA-Rad. In addition because of the computational requirements, the VLMs were not 
 pretrained on the MURA dataset which might have increased their performance significantly. Hence, although the performance of the VLMs are not the 
 best, LLaVA-Rad in particular shows potential for further development.
-
-% Try using gradcam and LVLM-Interpret for visualisation
-% Talk about more complex tasks (type of fracture) which VLM may be better at than CNN?
 \end{flushleft}
 
 

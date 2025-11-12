@@ -40,8 +40,8 @@ for the training stage.
         Total & 2452 & 1917 & 4369 \\
         \hline 
     \end{tabular}
-    \caption{Training Set}
-    \label{tab:Training Set} 
+    \caption{Training set}
+    \label{tab:Training set} 
 }
 \parbox{.45\linewidth}{
     \centering
@@ -56,8 +56,8 @@ for the training stage.
         Total & 23468 & 16537 & 40005 \\
         \hline 
     \end{tabular}
-    \caption{Pretraining Set}
-    \label{tab:Pretraining Set}
+    \caption{Pretraining set}
+    \label{tab:Pretraining set}
 }
 \end{table}
 
@@ -114,7 +114,7 @@ processed by a fully connected neural network to generate an output. An example 
     \centering 
     \includegraphics[height=0.3\textheight,keepaspectratio]{VGG16.png}
     \caption{VGG16 architecture | Credits to Kenneth Leung}
-    \label{fig:VGG16 archi}
+    \label{fig:VGG16 architecture}
 \end{figure}
 
 For this project, 3 CNN models were used: ConvNeXt, EfficientNetV2  and MobileNetV3. ConvNeXt is a modernised ResNet or
@@ -205,8 +205,8 @@ The framework used for the CNN models is outlined in the following pages.
         \label{fig:archi 3}
     \end{subfigure}
 
-    \caption{Model Architecture}
-    \label{fig:Model Architecture}
+    \caption{Model architecture}
+    \label{fig:Model architecture}
 \end{figure}
 
 \end{itemize}
@@ -296,9 +296,9 @@ The checkpoint used for LLaVA-Rad was from the alignment step which only tuned t
 directly training the image encoder and LLM. To further reduce memory usage, the existing weights of the model were compressed with 4-bit quantisation using the 
 bitsandbytes library (Dettmers et al., 2023).
 
-The TRL and PEFT libraries were used in a custom training script for finetuning MedGemma while LLaVA-Rad was tuned using the provided finetuning script from GitHub.
-For both models, the weights of the linear layers of the model were targeted for finetuning. The Adam-W adaptive optimiser was used instead of SGD as with the CNN models 
-to increase the convergence speed. For MedGemma, the hyperparameters used were batch size of 32 divided into 8 accumulation steps, max epochs of 5, learning rate 
+The TRL and PEFT libraries were used in a custom training script for finetuning MedGemma while LLaVA-Rad was finetuned by modifying the provided script from the LLaVA-Rad
+repository. For both models, the weights of the linear layers of the model were targeted for finetuning. The Adam-W adaptive optimiser was used instead of SGD as with 
+the CNN models to increase the convergence speed. For MedGemma, the hyperparameters used were batch size of 32 divided into 8 accumulation steps, max epochs of 5, learning rate 
 of 8e-5 with linear scheduling, weight decay of 1e-3, max grad norm of 0.03, LoRA rank of 16 and alpha of 32. For LLaVA-Rad, the different hyperparamters were max 
 epochs of 4, learning rate of 1e-4, LoRA rank of 32 and alpha of 64. 
 \end{flushleft}
