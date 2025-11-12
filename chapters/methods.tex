@@ -14,12 +14,15 @@ The data was further divided into training, validation, and test sets with a 80/
 Table 3.1.
 
 In addition, the MURA dataset from Stanford Machine Learning Group was used for pretraining the CNN 
-models (Rajpurkar et al., 2017). This dataset consists of 40561 radiographs of 7 different bodyparts: elbow, finger, forearm, 
-hand, humerus, shoulder and wrist. Each image is labelled as either positive (abnormality) or negative 
-(no abnormality). Notably, the criteria for abnormality used in MURA differs from the criteria for injury 
-in the main dataset. For instance, a contusion would be classified as normal in the main dataset but
-would be classified as abnormal in the MURA dataset. The division of the data into training and 
-validation sets is shown in Table 3.2.
+models (Rajpurkar et al., 2017). This dataset consists of 40561 radiographs of 7 different bodyparts: elbow, finger, 
+forearm, hand, humerus, shoulder and wrist. Each image is labelled as either positive (abnormality) or negative 
+(no abnormality). The division of the data into training and validation sets is shown in Table 3.2. 
+Although MURA also has elbow images, the criteria for abnormality used in MURA differs from the criteria for injury in 
+the main dataset. For example, a contusion would be classified as normal in the main dataset but would be classified as 
+abnormal in the MURA dataset. Because of this mismatch, the elbow X-rays in MURA could not be combined with the main dataset 
+for the training stage.
+
+% elbow images cannot be combined with dataset, must be used for pretraining only
 
 \begin{table}[h!]
 \parbox{.45\linewidth}{
@@ -75,20 +78,21 @@ Equalisation is an image processing technique which calculates histograms of the
 image. The pixel intensities are then redistributed using the histograms to improve the contrast of the image (Reza, 2004). 
 The implementation in OpenCV splits the image into a non overlapping grid and applies the technique subject to
 a clip limit which limits the amount of redistribution to reduce noise. The specific settings used were a clip 
-limit of 2.5 and a grid size of 4.
+limit of 2.5 and a grid size of 4. CLAHE is useful for detecting fractures as it increases the contrast between a fracture
+and the surrounding bone which improves its visibility.
 
 Next, the radiographs were sharpened further using unsharp masking. First, each image was processed with a 
-gaussian filter to produce a blurred version. The blurred image was then subtracted from the original image
+gaussian filter to produce a blurred image. This blurred image was then subtracted from the original image
 to produce a mask which is multiplied by a factor of 2 and added back to the original image. This process sharpens
-the image and increases contrast at edges. The sigma used for the gaussian filter was 5 for the MURA dataset and 7 for the 
-main dataset.
+the image and further increases contrast at the edges. The kernel used for the gaussian filter was 5 x 5 for the MURA dataset 
+and 7 x 7 for the main dataset.
 
 Lastly, the data was augmented with a combination of geometric transformations as follows: Random rotation between -60° and 60°,
 75\% probability of horizontal flip, scaling by a factor between 0.85 and 1.1 and translation along the x and y axis of between
-0.02 and 0.12. This process artificially expands the training set to reduce overfitting and improve generalisation. 
-Each image in the training set was augmented twice for the target dataset and once for the MURA dataset for a total of 
-10485 images and 73610 images respectively. Brightness and contrast transformations are also commonly used in image augmentation
-but were found to negatively impact performance and were thus excluded.
+0.02 and 0.12. Data augmentation artificially expands the training set for supervised learning which can reduce overfitting and improve generalisation to 
+new data. Each image in the training set was augmented twice for the target dataset and once for the MURA dataset for a total of 10485 images and 
+73610 images respectively. Brightness and contrast transformations are also commonly used in image augmentation but were found to negatively 
+impact performance and were thus excluded.
 
 % include examples?
 \end{flushleft}
@@ -104,13 +108,26 @@ but were found to negatively impact performance and were thus excluded.
 Convolutional Neural Networks (CNNs) are a type of neural network which use convolutional filters or kernels to 
 perform convolutions on images and produce intermediate feature maps. These feature maps are then passed onto the following 
 convolutional layers. At the final layer, the feature maps are pooled and flattened to produce a feature vector which is 
-processed by a fully connected neural network to generate an output.
+processed by a fully connected neural network to generate an output. An example of a CNN architecture is shown below.
 
-For this project, 3 CNN models were used: ConvNeXt, EfficientNetV2  and MobileNetV3. These models were chosen 
-due to their excellent performance on ImageNet and low computational cost compared to similarly sized CNN models. 
+\begin{figure}[ht] 
+    \centering 
+    \includegraphics[height=0.3\textheight,keepaspectratio]{VGG16.png}
+    \caption{VGG16 architecture | Credits to Kenneth Leung}
+    \label{fig:VGG16 archi}
+\end{figure}
+
+For this project, 3 CNN models were used: ConvNeXt, EfficientNetV2  and MobileNetV3. ConvNeXt is a modernised ResNet or
+Residual Network which is a deep neural network architecture that is widely used in tasks involving medical imaging
+due to its high performance (Liu et al., 2022; Xu et al., 2023). EfficientNetV2 is another family of CNNs which are designed
+for efficiency and faster training and have been successful in tasks such as identifying breast cancer from histopathology 
+slides (Tan and Le, 2021; Hayat et al., 2024). MobileNetV3 is a lightweight CNN architecture which can be run on mobile devices 
+due to its small size and low memory consumption and is useful for real time medical applications (Howard et al., 2019).
+
 After training the individual models, an ensemble model was created using feature fusion for the final classification. 
-The framework used for the CNN models is outlined below.
+The framework used for the CNN models is outlined in the following pages.
 
+\pagebreak
 \begin{itemize}
   \item 1. Transfer Learning \linebreak
   Transfer learning is a machine learning technique where a machine learning model is trained on one 
@@ -133,7 +150,6 @@ The framework used for the CNN models is outlined below.
   summing the per channel weights of each kernel. This allows the models to directly accept greyscale
   radiographs without affecting the output of the first layer.
 
-  \pagebreak
   \item 3. Convolutional Block Attention Module \linebreak
   Convolutional Block Attention Module (CBAM) is an attention mechanism for CNN models which can be
   incorporated into an existing architecture and trained together with the rest of the model (Woo et al., 2018). CBAM
@@ -145,8 +161,9 @@ The framework used for the CNN models is outlined below.
   ConvNeXt was modified with 4 CBAM modules placed after each of the 4 ConvNeXt blocks. EfficientNet
   was modified with a single CBAM module between the FusedMBConv modules and the MBConv modules, as
   well as a second CBAM module after the final convolutional layer. MobileNet was modified with a
-  single CBAM module after the final convolutional layer. The architecture for each model is shown below.
+  single CBAM module after the final convolutional layer.
 
+  \pagebreak
   \item 4. Ensembling \linebreak
   Ensembling is a commonly used technique in machine learning which combines the output of several 
   different base models to get a single model which outperforms the individual ones. This can be done
@@ -188,8 +205,8 @@ The framework used for the CNN models is outlined below.
         \label{fig:archi 3}
     \end{subfigure}
 
-    \caption{Architecture}
-    \label{fig:Architecture}
+    \caption{Model Architecture}
+    \label{fig:Model Architecture}
 \end{figure}
 
 \end{itemize}
@@ -260,21 +277,29 @@ trained on a large dataset of chest X-rays with radiology reports.
 \label{imp:sec:VLM Training}
 
 \begin{flushleft}
-Finetuning the weights of an entire VLM is extremely computationally and memory intensive due to the large size of the model. Hence, a 
-technique called Low Rank Adaptation (LoRA) was used instead. LoRA is a technique used to finetune pretrained models which involves freezing 
-the weights of the model and injecting lower rank matrices into the targeted parts of the model (Hu et al., 2021). During training, only these matrices are
-optimised instead of the original weights which greatly decreases the memory and time required. The matrices can then be merged with
-the original weights during inference to generate the desired output without increasing inference time.
+Finetuning the parameters of an entire VLM is extremely computationally and memory intensive due to the large size of the model and also carries the risk 
+of catastrophic forgetting which is a phenomenon where a model loses performance on old tasks when finetuned for a new task (Goodfellow et al., 2015). 
+To mitigate these issues, parameter efficient finetuning (PEFT) strategies are often used instead (Bafghi et al., 2024). Rather than finetuning the entire model, 
+only a small number of additional parameters are trained. 
 
-As the target dataset consists solely of images, a prompt was added to each image to analyse the radiograph and classify it as A: 'No injury'
-or B: 'Fracture or dislocation'. The correct answer is either 'No injury' or 'Fracture or dislocation' depending on the class of the image. 
-For both MedGemma and LLaVA-Rad, the pretrained weights were downloaded from Huggingface and used as a starting point for finetuning. However,
-for LLaVA-Rad, the checkpoint used for LLaVA-Rad is from the pretraining step which only tuned the image encoder. This is because the final 
-step used LoRA instead of directly tuning the encoder and LLM.
+The specific PEFT strategy used here is a technique called Low Rank Adaptation (LoRA) which involves freezing the parameters of a pretrained model and injecting
+additional low rank matrices into the targeted layers of the model (Hu et al., 2021). The updates of the original weight matrices from training can be represented by the 
+product of a pair of low rank matrices which are much smaller than the original when the rank is small. During training, the original matrices are frozen and only the 
+parameters of the low rank matrices are optimised which greatly decreases the memory and time required. For inference, the product of the low rank matrices is added to the 
+original weight matrices to obtain the finetuned weights without significantly increasing inference time. This process can be easily reversed by subtraction to obtain the 
+original weights allowing the model to swap between LoRA weights to perform different tasks.
 
-The Adam-W adaptive optimiser was used instead of SGD as with the CNN models to increase the convergence speed. For MedGemma, the hyperparameters 
-used were batch size of 32 divided into 8 accumulation steps, max epochs of 5, learning rate of 8e-5 with linear scheduling, weight decay of 1e-3, 
-max grad norm of 0.03, LoRA rank of 16 and alpha of 32. For LLaVA-Rad, the different hyperparamters were max epochs of 4, learning rate of 1e-4 
-with cosine scheduling, LoRA rank of 32 and alpha of 64. For both models, the linear layers of the model and the embeddings were finetuned.
+As the target dataset consists solely of images, a prompt was added to each image to instruct the model to analyse the radiograph and classify it as either 
+A: 'No injury' or B: 'Fracture or dislocation'. The correct answer is either 'No injury' or 'Fracture or dislocation' depending on the class of the image.
+For both MedGemma and LLaVA-Rad, the pretrained weights, tokeniser and image processor were downloaded from Huggingface and used as a starting point for finetuning. 
+The checkpoint used for LLaVA-Rad was from the alignment step which only tuned the image encoder. This is because the final finetuning step used LoRA instead of 
+directly training the image encoder and LLM. To further reduce memory usage, the existing weights of the model were compressed with 4-bit quantisation using the 
+bitsandbytes library (Dettmers et al., 2023).
+
+The TRL and PEFT libraries were used in a custom training script for finetuning MedGemma while LLaVA-Rad was tuned using the provided finetuning script from GitHub.
+For both models, the weights of the linear layers of the model were targeted for finetuning. The Adam-W adaptive optimiser was used instead of SGD as with the CNN models 
+to increase the convergence speed. For MedGemma, the hyperparameters used were batch size of 32 divided into 8 accumulation steps, max epochs of 5, learning rate 
+of 8e-5 with linear scheduling, weight decay of 1e-3, max grad norm of 0.03, LoRA rank of 16 and alpha of 32. For LLaVA-Rad, the different hyperparamters were max 
+epochs of 4, learning rate of 1e-4, LoRA rank of 32 and alpha of 64. 
 \end{flushleft}
 

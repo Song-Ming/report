@@ -217,7 +217,8 @@ In Alzubaidi et al., pretraining yielded improvements of between 2\% and 9\% acc
 improvement seen here. This may be because of differences in the target dataset. In Alzubaidi et al, the target dataset was the subset of humerus X-rays
 in MURA which comes from the same source as the rest of the dataset. In contrast, the elbow X-rays used here come from a different source and have different 
 characteristics from the X-rays in the MURA dataset which reduces the impact of the pretraining step. A possible solution could be to supplement the pretraining 
-set with additional X-rays from other publicly avaiable online sources as well as from local healthcare institutions
+set with additional X-rays from other publicly avaiable online sources as well as from local healthcare institutions. This could also include unlabelled X-rays for 
+an additional self-supervised learning step before the pretraining.
 
 The ensemble model had a 0.4\% increase in accuracy and 0.002 increase in AUROC compared to Convnext which is the best performing individual model. 
 This is a relatively small difference in performance. However, the ensemble model had a higher recall than all 3 of the individual models with 2.1\% 

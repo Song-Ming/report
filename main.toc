@@ -9,14 +9,14 @@
 \contentsline {section}{\numberline {3.2}Data Processing}{6}{section.3.2}%
 \contentsline {section}{\numberline {3.3}CNN Models}{7}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Architecture}{7}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}CNN Training}{10}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Vision Language Models}{11}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Models}{11}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}VLM Training}{12}{subsection.3.4.2}%
-\contentsline {chapter}{\numberline {4}Evaluation}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Results}{13}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Evaluation Metrics}{13}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Results}{14}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Discussion}{18}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{20}{chapter.5}%
-\contentsline {chapter}{References}{21}{chapter*.12}%
+\contentsline {subsection}{\numberline {3.3.2}CNN Training}{11}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Vision Language Models}{12}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Models}{12}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}VLM Training}{13}{subsection.3.4.2}%
+\contentsline {chapter}{\numberline {4}Evaluation}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Results}{14}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Evaluation Metrics}{14}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Results}{15}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Discussion}{19}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{21}{chapter.5}%
+\contentsline {chapter}{References}{22}{chapter*.13}%
